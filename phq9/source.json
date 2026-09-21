@@ -1,0 +1,361 @@
+{
+  "sourceVersion": "1.1.0",
+  "instrument": {
+    "id": "urn:truvex:phq9:patient-health-questionnaire-9",
+    "title": {
+      "en-US": "Patient Health Questionnaire-9 (PHQ-9)",
+      "es-US": "Cuestionario sobre la Salud del Paciente-9 (PHQ-9)"
+    },
+    "authority": {
+      "name": "Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc."
+    },
+    "languages": ["en-US", "es-US"],
+    "executionMode": "deterministic"
+  },
+  "groups": [
+    {
+      "id": "symptomItems",
+      "parentGroupId": null,
+      "order": 0,
+      "label": {
+        "en-US": "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
+        "es-US": "Durante las últimas 2 semanas, ¿qué tan seguido ha tenido molestias debido a los siguientes problemas?"
+      },
+      "repetition": { "mode": "none", "ordering": "unordered" }
+    },
+    {
+      "id": "functionalImpact",
+      "parentGroupId": null,
+      "order": 1,
+      "label": {
+        "en-US": "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+        "es-US": "Si marcó cualquiera de los problemas, ¿qué tanta dificultad le han dado estos problemas para hacer su trabajo, encargarse de las tareas del hogar, o llevarse bien con otras personas?"
+      },
+      "repetition": { "mode": "none", "ordering": "unordered" }
+    }
+  ],
+  "optionSets": [
+    {
+      "id": "frequencyFourPoint",
+      "options": [
+        {
+          "code": "f0",
+          "order": 0,
+          "score": 0,
+          "label": { "en-US": "Not at all", "es-US": "Ningún día" }
+        },
+        {
+          "code": "f1",
+          "order": 1,
+          "score": 1,
+          "label": { "en-US": "Several days", "es-US": "Varios días" }
+        },
+        {
+          "code": "f2",
+          "order": 2,
+          "score": 2,
+          "label": { "en-US": "More than half the days", "es-US": "Más de la mitad de los días" }
+        },
+        {
+          "code": "f3",
+          "order": 3,
+          "score": 3,
+          "label": { "en-US": "Nearly every day", "es-US": "Casi todos los días" }
+        }
+      ]
+    },
+    {
+      "id": "difficultyFourPoint",
+      "options": [
+        {
+          "code": "d0",
+          "order": 0,
+          "label": { "en-US": "Not difficult at all", "es-US": "No ha sido difícil" }
+        },
+        {
+          "code": "d1",
+          "order": 1,
+          "label": { "en-US": "Somewhat difficult", "es-US": "Un poco difícil" }
+        },
+        {
+          "code": "d2",
+          "order": 2,
+          "label": { "en-US": "Very difficult", "es-US": "Muy difícil" }
+        },
+        {
+          "code": "d3",
+          "order": 3,
+          "label": { "en-US": "Extremely difficult", "es-US": "Extremadamente difícil" }
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "phq9Item1",
+      "type": "choice",
+      "parentGroupId": "symptomItems",
+      "order": 0,
+      "prompt": {
+        "en-US": "Little interest or pleasure in doing things",
+        "es-US": "Poco interés o placer en hacer cosas"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "phq9Item2",
+      "type": "choice",
+      "parentGroupId": "symptomItems",
+      "order": 1,
+      "prompt": {
+        "en-US": "Feeling down, depressed, or hopeless",
+        "es-US": "Se ha sentido decaído(a), deprimido(a) o sin esperanzas"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "phq9Item3",
+      "type": "choice",
+      "parentGroupId": "symptomItems",
+      "order": 2,
+      "prompt": {
+        "en-US": "Trouble falling or staying asleep, or sleeping too much",
+        "es-US": "Ha tenido dificultad para quedarse o permanecer dormido(a), o ha dormido demasiado"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "phq9Item4",
+      "type": "choice",
+      "parentGroupId": "symptomItems",
+      "order": 3,
+      "prompt": {
+        "en-US": "Feeling tired or having little energy",
+        "es-US": "Se ha sentido cansado(a) o con poca energía"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "phq9Item5",
+      "type": "choice",
+      "parentGroupId": "symptomItems",
+      "order": 4,
+      "prompt": {
+        "en-US": "Poor appetite or overeating",
+        "es-US": "Sin apetito o ha comido en exceso"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "phq9Item6",
+      "type": "choice",
+      "parentGroupId": "symptomItems",
+      "order": 5,
+      "prompt": {
+        "en-US": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down",
+        "es-US": "Se ha sentido mal con usted mismo(a) – o que es un fracaso o que ha quedado mal con usted mismo(a) o con su familia"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "phq9Item7",
+      "type": "choice",
+      "parentGroupId": "symptomItems",
+      "order": 6,
+      "prompt": {
+        "en-US": "Trouble concentrating on things, such as reading the newspaper or watching television",
+        "es-US": "Ha tenido dificultad para concentrarse en ciertas actividades, tales como leer el periódico o ver la televisión"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "phq9Item8",
+      "type": "choice",
+      "parentGroupId": "symptomItems",
+      "order": 7,
+      "prompt": {
+        "en-US": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
+        "es-US": "¿Se ha movido o hablado tan lento que otras personas podrían haberlo notado? o lo contrario – muy inquieto(a) o agitado(a) que ha estado moviéndose mucho más de lo normal"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "phq9Item9",
+      "type": "choice",
+      "parentGroupId": "symptomItems",
+      "order": 8,
+      "prompt": {
+        "en-US": "Thoughts that you would be better off dead or of hurting yourself in some way",
+        "es-US": "Pensamientos de que estaría mejor muerto(a) o de lastimarse de alguna manera"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "phq9Item10",
+      "type": "choice",
+      "parentGroupId": "functionalImpact",
+      "order": 0,
+      "prompt": {
+        "en-US": "If you checked off any problems, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+        "es-US": "Si marcó cualquiera de los problemas, ¿qué tanta dificultad le han dado estos problemas para hacer su trabajo, encargarse de las tareas del hogar, o llevarse bien con otras personas?"
+      },
+      "helpText": {
+        "en-US": "This single patient-rated difficulty item is not used in calculating any PHQ score or diagnosis but rather represents the patient's global impression of symptom-related impairment.",
+        "es-US": "Esta pregunta sobre la dificultad, contestada por el paciente, no se usa para calcular ninguna puntuación ni diagnóstico del PHQ; representa la impresión global del paciente sobre la limitación relacionada con los síntomas."
+      },
+      "required": false,
+      "optionSetId": "difficultyFourPoint"
+    }
+  ],
+  "scoring": [
+    {
+      "id": "phq9TotalScore",
+      "label": {
+        "en-US": "PHQ-9 total score",
+        "es-US": "Puntuación total del PHQ-9"
+      },
+      "expression": {
+        "op": "if",
+        "cond": {
+          "op": "eq",
+          "left": {
+            "op": "aggregate",
+            "fn": "countAnswered",
+            "of": "score",
+            "source": {
+              "kind": "items",
+              "itemIds": [
+                "phq9Item1",
+                "phq9Item2",
+                "phq9Item3",
+                "phq9Item4",
+                "phq9Item5",
+                "phq9Item6",
+                "phq9Item7",
+                "phq9Item8",
+                "phq9Item9"
+              ]
+            }
+          },
+          "right": { "op": "num", "value": 9 }
+        },
+        "then": {
+          "op": "aggregate",
+          "fn": "sum",
+          "of": "score",
+          "source": {
+            "kind": "items",
+            "itemIds": [
+              "phq9Item1",
+              "phq9Item2",
+              "phq9Item3",
+              "phq9Item4",
+              "phq9Item5",
+              "phq9Item6",
+              "phq9Item7",
+              "phq9Item8",
+              "phq9Item9"
+            ]
+          }
+        },
+        "else": { "op": "null" }
+      },
+      "resultType": "number",
+      "scope": { "kind": "assessment" },
+      "emit": true,
+      "missingPolicy": "propagate"
+    },
+    {
+      "id": "phq9SeverityBand",
+      "label": {
+        "en-US": "PHQ-9 depression severity band (0 none-minimal, 1 mild, 2 moderate, 3 moderately severe, 4 severe)",
+        "es-US": "Nivel de gravedad de la depresión según el PHQ-9 (0 ninguna a mínima, 1 leve, 2 moderada, 3 moderadamente grave, 4 grave)"
+      },
+      "expression": {
+        "op": "if",
+        "cond": { "op": "lte", "left": { "op": "scoreRef", "scoreId": "phq9TotalScore" }, "right": { "op": "num", "value": 4 } },
+        "then": { "op": "num", "value": 0 },
+        "else": {
+          "op": "if",
+          "cond": { "op": "lte", "left": { "op": "scoreRef", "scoreId": "phq9TotalScore" }, "right": { "op": "num", "value": 9 } },
+          "then": { "op": "num", "value": 1 },
+          "else": {
+            "op": "if",
+            "cond": { "op": "lte", "left": { "op": "scoreRef", "scoreId": "phq9TotalScore" }, "right": { "op": "num", "value": 14 } },
+            "then": { "op": "num", "value": 2 },
+            "else": {
+              "op": "if",
+              "cond": { "op": "lte", "left": { "op": "scoreRef", "scoreId": "phq9TotalScore" }, "right": { "op": "num", "value": 19 } },
+              "then": { "op": "num", "value": 3 },
+              "else": {
+                "op": "if",
+                "cond": { "op": "lte", "left": { "op": "scoreRef", "scoreId": "phq9TotalScore" }, "right": { "op": "num", "value": 27 } },
+                "then": { "op": "num", "value": 4 },
+                "else": { "op": "null" }
+              }
+            }
+          }
+        }
+      },
+      "resultType": "number",
+      "scope": { "kind": "assessment" },
+      "emit": true,
+      "missingPolicy": "propagate"
+    }
+  ],
+  "rules": [],
+  "provenance": {
+    "languages": {
+      "en-US": {
+        "sourced": true,
+        "document": "Patient Health Questionnaire-9 (PHQ-9), English",
+        "publisher": "phqscreeners.com",
+        "retrievedFrom": "https://www.phqscreeners.com/",
+        "retrievedAt": "2026-09-20",
+        "digest": "sha256:e3fb5b8853e3530c9025c822b99fd4f4bc17da49eefda5ed689c49238c132a46",
+        "transcribedBy": { "who": "Truvex engine track", "method": "textLayerAndImage" },
+        "verifiedBy": {
+          "verified": false,
+          "note": "Transcribed and not yet read back against the document by a second party. A transcription error in a clinical instrument is invisible in the output and wrong in every score afterwards."
+        },
+        "notes": "Item text, the instruction, item 10 and all option labels transcribed verbatim from the form. The form prints no severity band, no threshold and no interpretation text; those come from the instruction manual and are recorded under `scoring`."
+      },
+      "es-US": {
+        "sourced": true,
+        "document": "Cuestionario sobre la Salud del Paciente-9 (PHQ-9), Spanish for the USA",
+        "publisher": "phqscreeners.com",
+        "retrievedFrom": "https://www.phqscreeners.com/",
+        "retrievedAt": "2026-09-20",
+        "digest": "sha256:4b55ea005bce454bc1de35b5b643960079b560c25fbc41c6b1d017cd09e15d1a",
+        "transcribedBy": { "who": "Truvex engine track", "method": "textLayerAndImage" },
+        "verifiedBy": {
+          "verified": false,
+          "note": "Transcribed and not yet read back against the document by a second party, and this language most needs it: an earlier authoring source carried a different, fluent Spanish that matched no distributed form."
+        },
+        "notes": "The tag follows the document: the form held is Spanish for the USA, so the language is es-US. Items 6 and 8 carry an en-dash on this form where the English form carries an em-dash; both are transcribed as printed. The form's own office-coding line is printed in English and is not transcribed, being an administrative annotation rather than instrument content. The manual records that most translations are linguistically valid but that few have been psychometrically validated against an independent structured psychiatric interview; nothing here should be read as claiming validation."
+      }
+    },
+    "scoring": [
+      {
+        "target": "phq9SeverityBand",
+        "transcribedFrom": {
+          "document": "Instruction Manual: Instructions for Patient Health Questionnaire (PHQ) and GAD-7 Measures",
+          "locus": "Table 4, page 7; corroborated in prose on pages 5 and 6",
+          "digest": "sha256:6ed2f00f97e438c1168cd702d38d31fc923031445c720653005f138aa424228a"
+        },
+        "attributedTo": "Kroenke K, Spitzer RL. The PHQ-9: a new depression diagnostic and severity measure. Psychiatric Annals 2002;32:509-521",
+        "attributionConsulted": false,
+        "notes": "The bands are transcribed from Table 4 of the manual, which attributes them to the paper above. That paper has not been retrieved or read, and `attributionConsulted` is false to say so: recording a citation is not performing it. Table 4's third column, Proposed Treatment Actions, is deliberately not carried — it is clinical guidance rather than instrument content. Page 2 of the same manual states three cutpoints for the PHQ family generally where pages 5, 6 and Table 4 state four for the PHQ-9; the PHQ-9-specific figures are used."
+      }
+    ]
+  }
+}
