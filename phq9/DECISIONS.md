@@ -139,9 +139,13 @@ Mapping, from Table 4: `0` None-minimal (0–4) · `1` Mild (5–9) · `2` Moder
 "minimal", and shortening it would be an edit rather than a transcription.
 
 **The English label matches Table 4's casing exactly**, corrected 2026-10-03: it
-previously lowercased every band name. The Spanish label is unchanged; it is a
-Truvex translation with no published source, since no Spanish-language manual
-was held.
+previously lowercased every band name. The Spanish label is unchanged; see
+[Spanish text with no published source](#spanish-text-with-no-published-source).
+
+**The top band is bounded at 27 rather than left open.** A total above 27 is
+impossible, and an open `else` would classify an impossible value as severe. It
+emits `null` instead, so an impossible total fails loudly rather than quietly
+producing the most alarming band.
 
 ### An instruction to change the bands, checked against the document and withdrawn
 
@@ -156,11 +160,6 @@ page 7) settled it: the first band is printed "0 – 4" and named "None-minimal"
 The stored labels and ranges already matched. **No confirmation item and no
 deviation is recorded, because there is none.** Only the casing above changed.
 
-**The top band is bounded at 27 rather than left open.** A total above 27 is
-impossible, and an open `else` would classify an impossible value as severe. It
-emits `null` instead, so an impossible total fails loudly rather than quietly
-producing the most alarming band.
-
 ## Item 10 is unscored, and the exclusion is sourced
 
 The manual states it directly on page 2: *"This single patient-rated difficulty
@@ -169,9 +168,34 @@ the patient's global impression of symptom-related impairment."*
 
 The `helpText` uses the manual's own wording rather than a paraphrase. **The
 Spanish `helpText` is a translation of that sentence and is not transcribed from
-any document** — no Spanish-language manual was held. It is the one piece of
-Spanish in this source that is not from the form, and it is marked here rather
-than left to be assumed.
+any document**; see
+[Spanish text with no published source](#spanish-text-with-no-published-source).
+
+## Spanish text with no published source
+
+**Recorded 2026-10-03. Agreed in conversation on 2026-09-21 and not written down
+until now**, which is the failure this project keeps finding in code, here in
+its own decision record.
+
+**The Spanish severity band labels and the Spanish item 10 `helpText` have no
+published source.** The Spanish form prints neither, and the instruction manual
+is English only. **They are Truvex translations, recorded as product text rather
+than as transcription**, and a qualified bilingual clinician reviews them before
+any clinical use.
+
+**The English equivalents are not product text.** The band names are transcribed
+from Table 4 and the `helpText` from the manual's page 2. **The asymmetry is the
+point:** the same slot is a transcription in one language and Truvex's own
+wording in the other, and a reviewer must not read the Spanish with the
+authority the English carries.
+
+**Corrected in the same entry:** this file previously called the Spanish
+`helpText` "the one piece of Spanish in this source that is not from the form".
+That was false. The band labels are not from the form either, and neither are
+the two score labels' surrounding wording — *"PHQ-9 total score"*, *"PHQ-9
+depression severity band (…)"* and their Spanish counterparts — which are
+Truvex wording in both languages, around band names that are transcribed in
+English only.
 
 ## Group labels carry the form's own headings
 
