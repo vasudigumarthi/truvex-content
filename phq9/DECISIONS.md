@@ -227,12 +227,12 @@ exactly one item, has no child groups, and that item's prompt is identical to
 the label. It is instrument-agnostic and needed nothing from content. Measured
 after `9efc20c`: item 10's text renders once in both languages.
 
-## The printed footer is carried verbatim, as a display item
+## The printed footer is carried verbatim, in the attribution slot
 
-**Recorded 2026-10-03.** Each form prints an attribution and permission
-statement at the foot of the page. It is now carried as the display item
-`printedFooter`, holding each language's printed text exactly, so each
-generated definition carries its own language's footer:
+Each form prints an attribution and permission statement at the foot of the
+page. **Since 2026-10-04 it is carried as `instrument.attribution`**, one plain
+string per language, exactly as printed, and each generated definition carries
+its own language's text as `assessment.attribution`:
 
 - English: *"Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt
   Kroenke and colleagues, with an educational grant from Pfizer Inc. No
@@ -242,32 +242,35 @@ generated definition carries its own language's footer:
   Inc. No se requiere permiso para reproducir, traducir, presentar o
   distribuir."*
 
-The line break each form prints mid-sentence is layout and is not carried.
+The line break each form prints mid-sentence is layout and is not carried. **One
+string, not split into attribution and permission**: splitting it would be
+interpretation, and the decision was to store what the form prints.
 
-**Why not `instrument.authority.name`.** That field is a single string and is not
-localizable, so it cannot hold the Spanish attribution. **This is a gap in the
-format, and fixing it properly needs a schema version.** `authority.name` keeps
-the English attribution it already held.
+**It renders where the form prints it.** Measured 2026-10-04 on both generated
+definitions: `h1 > symptomItems > functionalImpact > footer`, the footer's text
+equal to the stored attribution. It maps to FHIR `Questionnaire.copyright`, and
+an ODM export reports it lost, ODM having no element for it.
 
-**A deviation from the printed layout.** The form prints the footer at the foot
-of the page. Here it renders near the top, under the title, because ungrouped
-items render before groups. The text is verbatim; only its position differs.
-Measured: `h1 > printedFooter > symptomItems > functionalImpact`.
+**The definitions now declare content model revision 1.1.0**, the revision that
+introduced the field, stamped by the generator from the field's presence. A
+deployment whose engine supports only 1.0.0 refuses them by name.
 
-**Rejected: placing it in `functionalImpact` after item 10**, which would render
-it at the foot. That group would then hold two items, and the renderer rule
-above would have to change from *exactly one item* to *exactly one non-display
-item*. That amendment may well be right on its own merits, but it was proposed
-to admit content added in the same session, and a rule changed to fit the case
-in front of it is not a rule. If it is wanted later, it arrives on its own
-evidence.
+### History: a display item, 2026-10-03 to 2026-10-04
 
-**The proper closure is a footer slot in the content format**, so attribution
-has a declared place rather than borrowing the display-item mechanism. That is a
-format change. It joins two others in the platform's queue — one meaning per
-`definitionDigest` (instance 94) and the definition `status` enum (instance 95)
-— as a single content-format version bump, scheduled rather than left as open
-questions.
+The footer was first carried as an ungrouped display item, `printedFooter`,
+because the format had no slot for it. Ungrouped items render before groups, so
+it rendered near the top, under the title — **a recorded deviation from the
+printed layout**, now resolved. Placing it in `functionalImpact` after item 10
+was rejected then: it would have needed the renderer's single-item heading rule
+widened to fit content added in the same session. The text moved from the
+display item to the slot byte for byte, checked in both languages.
+
+### Still a gap: `authority.name` is not localizable
+
+`instrument.authority.name` is a single string and cannot hold a Spanish
+authority. The attribution slot carries the printed text in each language, which
+is what was needed; **the authority field itself is unchanged**, keeps the
+English attribution it held, and localizing it would be its own format change.
 
 ## Item 9 raises no alert
 

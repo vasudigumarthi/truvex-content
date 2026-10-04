@@ -9,6 +9,10 @@
     "authority": {
       "name": "Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc."
     },
+    "attribution": {
+      "en-US": "Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute.",
+      "es-US": "Elaborado por los doctores Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke y colegas, mediante una subvención educativa otorgada por Pfizer Inc. No se requiere permiso para reproducir, traducir, presentar o distribuir."
+    },
     "languages": ["en-US", "es-US"],
     "executionMode": "deterministic"
   },
@@ -214,17 +218,6 @@
       },
       "required": false,
       "optionSetId": "difficultyFourPoint"
-    },
-    {
-      "id": "printedFooter",
-      "type": "display",
-      "parentGroupId": null,
-      "order": 0,
-      "prompt": {
-        "en-US": "Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute.",
-        "es-US": "Elaborado por los doctores Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke y colegas, mediante una subvención educativa otorgada por Pfizer Inc. No se requiere permiso para reproducir, traducir, presentar o distribuir."
-      },
-      "required": false
     }
   ],
   "scoring": [
