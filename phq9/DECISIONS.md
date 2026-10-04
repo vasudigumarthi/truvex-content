@@ -205,7 +205,7 @@ document — each group's label is the form's own instruction text for that
 block, transcribed. The instruction is not a separate display item: on the form
 it is a heading above the table, not an item in it.
 
-### Item 10's text renders twice, and content is not at fault
+### Item 10's text rendered twice, and content was not at fault
 
 **Measured 2026-10-03**, by rendering each generated definition through the
 platform's browser renderer into a DOM: item 10's text appears twice in both
@@ -221,10 +221,11 @@ states.
 into a clinical form where the published form has none. The decision above
 stands.
 
-**The closure is in the platform**, and at this writing it is a separate change
-from this one: the renderer omits a group heading when the group holds exactly
-one item and that item's prompt is identical to the label. It is
-instrument-agnostic and needs nothing from content.
+**Closed in the platform** by `c2a9c80` and amended by `9efc20c`, both in
+`truvex-capsule`: the renderer omits a group heading when the group holds
+exactly one item, has no child groups, and that item's prompt is identical to
+the label. It is instrument-agnostic and needed nothing from content. Measured
+after `9efc20c`: item 10's text renders once in both languages.
 
 ## The printed footer is carried verbatim, as a display item
 
