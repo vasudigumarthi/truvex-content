@@ -132,11 +132,29 @@ Spanish session would store an English band name. **The ordinal is
 language-neutral**; the band names live in each language's score label, where
 they are translated like everything else a person reads.
 
-Mapping, from Table 4: `0` none-minimal · `1` mild · `2` moderate ·
-`3` moderately severe · `4` severe.
+Mapping, from Table 4: `0` None-minimal (0–4) · `1` Mild (5–9) · `2` Moderate
+(10–14) · `3` Moderately Severe (15–19) · `4` Severe (20–27).
 
 **The first band keeps the manual's own name.** Table 4 says "None-minimal", not
 "minimal", and shortening it would be an edit rather than a transcription.
+
+**The English label matches Table 4's casing exactly**, corrected 2026-10-03: it
+previously lowercased every band name. The Spanish label is unchanged; it is a
+Truvex translation with no published source, since no Spanish-language manual
+was held.
+
+### An instruction to change the bands, checked against the document and withdrawn
+
+**Recorded 2026-10-03.** An instruction asked for the manual's labels as single
+words — dropping "None-" from band 0, to be marked as needing confirmation
+against Table 4 — and for a recorded deviation, on the understanding that the
+published first band runs 1 to 4 where this source covers 0 to 4.
+
+**The instruction came from a recollection of the published table, not from the
+document.** Reading Table 4 in the held manual (digest `sha256:6ed2f00f…`,
+page 7) settled it: the first band is printed "0 – 4" and named "None-minimal".
+The stored labels and ranges already matched. **No confirmation item and no
+deviation is recorded, because there is none.** Only the casing above changed.
 
 **The top band is bounded at 27 rather than left open.** A total above 27 is
 impossible, and an open `else` would classify an impossible value as severe. It
@@ -163,13 +181,114 @@ document — each group's label is the form's own instruction text for that
 block, transcribed. The instruction is not a separate display item: on the form
 it is a heading above the table, not an item in it.
 
+### Item 10's text renders twice, and content is not at fault
+
+**Measured 2026-10-03**, by rendering each generated definition through the
+platform's browser renderer into a DOM: item 10's text appears twice in both
+languages, once as the `functionalImpact` group's heading and once as the
+item's prompt.
+
+**The cause is three facts together:** the schema requires every group to carry
+a label; this group holds one item whose prompt is that same text; and the
+printed form has no heading for that block. The content states what the form
+states.
+
+**Rejected: inventing a heading for this group.** It would put Truvex words
+into a clinical form where the published form has none. The decision above
+stands.
+
+**The closure is in the platform**, and at this writing it is a separate change
+from this one: the renderer omits a group heading when the group holds exactly
+one item and that item's prompt is identical to the label. It is
+instrument-agnostic and needs nothing from content.
+
+## The printed footer is carried verbatim, as a display item
+
+**Recorded 2026-10-03.** Each form prints an attribution and permission
+statement at the foot of the page. It is now carried as the display item
+`printedFooter`, holding each language's printed text exactly, so each
+generated definition carries its own language's footer:
+
+- English: *"Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt
+  Kroenke and colleagues, with an educational grant from Pfizer Inc. No
+  permission required to reproduce, translate, display or distribute."*
+- Spanish: *"Elaborado por los doctores Robert L. Spitzer, Janet B.W. Williams,
+  Kurt Kroenke y colegas, mediante una subvención educativa otorgada por Pfizer
+  Inc. No se requiere permiso para reproducir, traducir, presentar o
+  distribuir."*
+
+The line break each form prints mid-sentence is layout and is not carried.
+
+**Why not `instrument.authority.name`.** That field is a single string and is not
+localizable, so it cannot hold the Spanish attribution. **This is a gap in the
+format, and fixing it properly needs a schema version.** `authority.name` keeps
+the English attribution it already held.
+
+**A deviation from the printed layout.** The form prints the footer at the foot
+of the page. Here it renders near the top, under the title, because ungrouped
+items render before groups. The text is verbatim; only its position differs.
+Measured: `h1 > printedFooter > symptomItems > functionalImpact`.
+
+**Rejected: placing it in `functionalImpact` after item 10**, which would render
+it at the foot. That group would then hold two items, and the renderer rule
+above would have to change from *exactly one item* to *exactly one non-display
+item*. That amendment may well be right on its own merits, but it was proposed
+to admit content added in the same session, and a rule changed to fit the case
+in front of it is not a rule. If it is wanted later, it arrives on its own
+evidence.
+
+**The proper closure is a footer slot in the content format**, so attribution
+has a declared place rather than borrowing the display-item mechanism. That is a
+format change. It joins two others in the platform's queue — one meaning per
+`definitionDigest` (instance 94) and the definition `status` enum (instance 95)
+— as a single content-format version bump, scheduled rather than left as open
+questions.
+
+## Item 9 raises no alert
+
+**Recorded 2026-10-03 as a prototype-stage decision, for review before any
+clinical use.**
+
+Capsule captures the response to item 9 and scores it like any other item. **It
+raises no alert, flag or notification on any answer.** Any protocol for a
+positive answer — who is told, how fast, what follows — belongs to the
+deploying party, and is theirs to define and operate.
+
+**This matches how the paper instrument is administered.** The printed form
+carries no instruction for a positive answer; the manual (page 2) says a final
+decision about the risk of self-harm requires a clinical interview, and points
+to a separate follow-up screener. Both sit with the clinician, not the form.
+
+**The same statement is in the platform's integration guide**, so a deploying
+party cannot assume the product alerts.
+
+## The check-mark instruction is not carried
+
+Each form prints a marking instruction under the first block's heading:
+*(Use "✔" to indicate your answer)* and *(Marque con un "…" para indicar su
+respuesta)*, where the Spanish form's mark is a symbol-font glyph its text layer
+does not carry. **It is omitted deliberately.** It tells a respondent how to mark
+paper, which does not apply on screen, where the response control is the
+instruction. Recorded so the absence is a decision rather than a silence.
+
+## The manual's retrieval date
+
+**The instruction manual was retrieved 2026-09-20.** Basis: the held file's
+timestamp is 2026-09-20 21:54, beside the two forms' 21:45 and 21:46, and its
+sha256 matches the digest recorded in `provenance.scoring`. The date is recorded
+here rather than in the source because `transcribedFrom` carries
+`document`, `locus` and `digest` by design: a citation is not a transcription,
+and the digest is what makes the citation checkable. That shape is intended, not
+incomplete.
+
 ## What is owed
 
-**The permission statement is not carried into definitions, and it should be.**
-The manual states, page 8: *"All of the measures included in Table 1 are in the
-public domain. No permission is required to reproduce, translate, display or
-distribute."* The form carries only the second sentence; the public-domain
-sentence is the half a legal reviewer needs and it is stronger.
+**The public-domain statement is not carried into definitions, and it should
+be.** The manual states, page 8: *"All of the measures included in Table 1 are in
+the public domain. No permission is required to reproduce, translate, display or
+distribute."* The form carries only the second sentence, and since 2026-10-03
+that sentence reaches definitions as part of the printed footer. The
+public-domain sentence is the half a legal reviewer needs and it is stronger.
 
 **It is source-only in this work because carrying it further is a format
 change.** The canonical schema's `assessment.authority` is
