@@ -31,7 +31,7 @@ with "go to question E":      phq9Score=0     absentInputs=[]
 **A respondent with no panic attack gets a depression score of 0**, with a basis
 that reads complete. That reads as no depression, and it could be
 catastrophically wrong: the most severe possible PHQ-9 is reported as the least
-severe. Recorded as platform work in `../ESCALATIONS.md`, escalation 4.
+severe. Recorded as platform work in `../ESCALATIONS.md`, escalation 1, under "Sums".
 
 **Why the deviation is unauthored rather than corrected.** Every option deviates
 from the printed form, so the question is which deviation is safe:
@@ -67,8 +67,10 @@ items. That is the same arithmetic.
 **No severity bands are authored.** None are printed on this form, and authoring
 them from another document or from memory would not be a transcription.
 
-**A sum withholds when any item is blank.** That is correct for a total, and it
-matches the position taken for escalation 1, where only counts tolerate blanks.
+**A sum withholds when any item is blank.** That is correct for a total, and
+escalation 1 keeps it: a sum must state a magnitude and cannot bound one. Only
+threshold counts answer with blank members, and only where the blanks cannot
+change the result.
 
 **Section C has no score.** None is printed.
 

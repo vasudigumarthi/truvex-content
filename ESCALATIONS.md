@@ -16,46 +16,168 @@ clean clone built in scratch, evaluated with `resolveRules` and
 
 ---
 
-## 1. A count of items meeting a criterion must treat a blank as not meeting it
+## 1. A threshold count bounds itself and answers only when the bounds agree; a sum withholds
 
-**The finding.** The forms' office-coding algorithms treat a blank as a definite
-"does not meet the criterion". The engine treats any absent input a score reads
-as "cannot compute". **Both are right in their own place, and only one is
-applied.**
+**Decided 2026-10-07 (Vasu). This replaces two earlier escalations**:
 
-- **For a sum**, withholding is correct: a missing item makes the total wrong.
-- **For a count of items meeting a criterion**, an unanswered item simply does not
-  meet it, and the count is still meaningful. That is how the paper algorithm
-  works and how a human office coder applies it.
+- the first escalation 1, "a count treats a blank as not meeting the criterion";
+- the first escalation 4, "an aggregate with zero contributing members never
+  returns a value".
 
-The engine collapses the two cases.
+**Neither was right as written**, and the conflict between them was the symptom.
+Their evidence is kept below.
 
-**Required behaviour.** A count-with-threshold tolerates absence, treating an
-unanswered member as not matching, and **reports alongside its result how many
-members were unanswered**, so a reader knows how much of the form was blank.
-Sums keep withholding.
+**The capsule thread implements this in the engine. Content cannot express it,
+and should not try.** Nothing in the authoring source or the expression grammar
+can tell a decisive blank from an irrelevant one, and no authoring declaration
+is to be added for it.
 
-**Evidence** (PHQ, `phq/source.json`):
+### Why "blank does not match" was wrong
 
-| Responses | Paper answer | Engine |
-|---|---|---|
-| #2e blank, all else negative, #2a and #2b "Not at all" | Maj Dep Syn no, Other Dep Syn no | both **no value**, `absentInputs=[q2e]` |
-| #1d blank, three of #1a-m "a lot" | Som Dis symptom criterion met | **no value**, `absentInputs=[q1d]` |
-| #6a-c YES, #8 blank | Bul Ner no, Bin Eat Dis yes | both **no value**, `absentInputs=[q8]` |
+Take the depression count: eight items answered, four meet the threshold, #2e
+blank, threshold five. "Blank does not match" reports `false`. **But a match on
+#2e would have made it five.** The blank is decisive, and that rule answers
+anyway. **It is the same class of error as a PHQ-9 of 27 becoming 0, only
+quieter.**
 
-**What it touches beyond the evaluator:**
+### The rule for a threshold count
 
-- **The record format.** Completeness is derived from an empty `absentInputs`, and
-  a non-empty list means no value. A tolerant count needs its own field for its
-  unanswered members, or a record would carry a value beside a non-empty absent
-  list and contradict its own rule. That is an `assessment-record` change.
+**Classify every member:**
+
+| Member | Class |
+|---|---|
+| Answered and matching | definite match |
+| Answered and not matching | definite non-match |
+| Shown but blank | unknown |
+| Excluded because an **answered** input made it inapplicable | definite non-match: the respondent told us it does not apply |
+| Excluded with no answered cause, including a section never performed and a gate left blank | unknown: nobody asked, so anything is possible |
+
+**Then bound the count:**
+
+- **minimum** = definite matches;
+- **maximum** = definite matches + unknowns.
+
+**Answer only when the bounds agree:**
+
+| Bounds | Result |
+|---|---|
+| minimum meets the threshold | `true` |
+| maximum fails the threshold | `false` |
+| otherwise | **no value**, because the unknowns decide it |
+
+**The result records the three numbers:** definite matches, definite non-matches
+and unknowns. A reader can then see which case produced the answer instead of
+inferring it.
+
+**The test of "answered cause" is derived, not declared.** The engine knows which
+rule excluded a member and whether that rule's own condition was answered.
+
+### Sums
+
+**Unchanged in principle.** A sum must state a magnitude and cannot bound one:
+
+- **any unknown member means the sum has no value;**
+- **a sum over zero contributing members always has no value**, whatever emptied
+  it. With no values there is no magnitude, and 0 states something nobody
+  produced.
+
+D1 (record-3 break plan §43) covers a section excluded by a *declared gate*. **The
+zero-member case is broader:** ordinary skip rules can empty a total with no
+gate involved. D1's other half stands unchanged: a *partially* excluded section
+withholds only when the author declares it a gate.
+
+### Strictly more conservative than the printed algorithms
+
+**This rule is strictly more conservative than the printed algorithms, which
+assume a complete form.** Where the paper implies an answer from a form with a
+decisive blank, the engine declines to answer. **That is the correct direction to
+be wrong in:** declining is visible in the record; a wrong answer is not.
+
+### Every case we have
+
+Results under the rule are derived by applying it. "Today" is measured at capsule
+`babc9b6` on the generated `en-US` PHQ definition, except where marked.
+
+**Alc Abu** (count of #10a-e YES, at least 1):
+
+| Case | min / max | Under the rule | Paper | Today |
+|---|---|---|---|---|
+| #9 NO, #10 excluded by that answer | 0 / 0 | `false` | false | `false` |
+| #9 YES, #10a-e all NO | 0 / 0 | `false` | false | `false` |
+| #9 blank, #10 shown and blank | 0 / 5 | **no value** | (assumes complete) | no value, `absentInputs=[q10a..q10e]` |
+| #9 blank, #10 hidden | 0 / 5 | **no value** | — | not reachable: a rule whose condition is unanswered does not fire |
+
+**The earlier conflict disappears instead of needing a decision.** A blank gate's
+members are unknown whether the engine shows them or hides them, so the two
+rows give the same answer.
+
+**Maj Dep Syn** (count of #2a-i at threshold, at least 5) and **Other Dep Syn**
+(2 to 4), with #2e blank:
+
+| Others meeting | min / max | Maj Dep Syn | Other Dep Syn | Today (both) |
+|---|---|---|---|---|
+| 5 of 8 | 5 / 6 | `true` | `false` | no value, `absentInputs=[q2e]` |
+| 4 of 8 | 4 / 5 | **no value**: the blank decides it | **no value** | no value |
+| 3 of 8 | 3 / 4 | `false` | `true` | no value |
+| 0 of 8, #2a and #2b "Not at all" | 0 / 1 | `false` | `false` | no value |
+
+The 4-of-8 row is the one the first escalation 1 would have answered `false`.
+
+**Other Dep Syn's threshold is a range.** The rule then reads: `true` when every
+count in [min, max] lies inside 2 to 4, `false` when none does, no value
+otherwise. **The PHQ source also computes the count as its own score
+(`depressiveItemsAtThreshold`) and compares it in two others through
+`scoreRef`**, so the bounds must survive a `scoreRef` and the comparison applied
+to it. How is the capsule thread's call. The PHQ needs it.
+
+**Som Dis symptom criterion** (count of #1a-m "a lot", at least 3), with #1d
+blank:
+
+| Case | min / max | Under the rule | Today |
+|---|---|---|---|
+| three others "a lot" | 3 / 4 | `true` | no value, `absentInputs=[q1d]` |
+| two others "a lot" | 2 / 3 | **no value**: #1d decides it | no value |
+
+**Pan Syn and Other Anx Syn:** unaffected. The gating item's definite `false`
+already decides each `and`.
+
+**Sums, PHQ-SADS:** under C a the form prints "If you checked NO, go to question
+E", which taken literally skips section D, the PHQ-9. On a scratch variant
+carrying that rule, with every D item at "Nearly every day" and C a NO:
+
+```
+without the rule:   phq9Score=27
+with the rule:      phq9Score=0    absentInputs=[]
+```
+
+**The most severe possible total is reported as the least severe, with a basis
+that reads complete.** It follows from two settled positions applied together: a
+withdrawn item is not demanded (numeric semantics §2.2), and `sum` over an empty
+set is 0. **Under the rule, it has no value.** The source does not author the
+literal skip; that is a recorded deviation in `phq-sads/DECISIONS.md`.
+
+**Also measured, A6 blank:** `phq15Score` has no value, `absentInputs=[a6]`. That
+is correct for a sum, and unchanged.
+
+### What the rule does not cover
+
+**Bul Ner and Bin Eat Dis are conjunctions, not counts.** With #6a-c YES and #8
+blank, both have no value today (`absentInputs=[q8]`). Three-valued logic over an
+unknown #8 gives the same result, which is correct for Bul Ner. **Bin Eat Dis's
+"either NO or left blank" names the blank as a condition. That is escalation 2,
+and this rule does not reach it.**
+
+### What it touches beyond the evaluator
+
+- **The record format.** Completeness is derived today from an empty
+  `absentInputs`, and a non-empty list means no value. A count that answers with
+  unknown members needs its three numbers recorded, or a record would carry a
+  value beside a non-empty absent list and contradict its own rule. That is an
+  `assessment-record` change.
 - **The vector generator.** It refuses a comparison inside a `countWhere`
-  predicate (`vector_path_unmeasurable`). Its recorded trigger, "when an
-  instrument needs a comparison inside a countWhere predicate", is now met. The
-  sources here use `in`, not a comparison, and generate today; vectors were not
-  attempted.
-
-**Do not author around it in content.** The PHQ source does not.
+  predicate (`vector_path_unmeasurable`), and its recorded trigger to revisit is
+  now met. The PHQ source uses `in`, not a comparison, and generates today.
+  Vectors were not attempted.
 
 ## 2. `absence_operator_in_score` is too broad
 
@@ -124,98 +246,9 @@ demonstration.
 **Until then:** the PHQ and PHQ-SADS sources record what the schema allows, at
 document level, and their DECISIONS files state what could not be recorded.
 
-## 4. An aggregate with zero contributing members never returns a value, whatever emptied it
+## 4. Merged into escalation 1
 
-**This is the same defect as D1, reached by a different path, and the rule needs
-stating more broadly than D1 states it.**
-
-**D1** (record-3 break plan §43, decided 2026-10-07) says: a section excluded by
-a *declared gate* never returns a score; it is withheld, with a named reason
-identifying the gate. Undeclared groups behave as today.
-
-**The broader path:** ordinary skip rules can empty a total with no gate
-involved. Today that total returns 0.
-
-**Evidence.** The PHQ-SADS prints, under C a: "If you checked NO, go to question
-E". Taken literally, that skips section D, the PHQ-9. On a scratch variant
-carrying that rule, with every D item answered "Nearly every day" and C a NO:
-
-```
-without the rule:   phq9Score=27
-with the rule:      phq9Score=0    absentInputs=[]
-```
-
-**The most severe possible total is reported as the least severe, and the basis
-reads complete.** No gate is declared anywhere, so D1 does not reach it. It
-follows from two settled positions applied together:
-
-- a withdrawn item is not demanded (numeric semantics §2.2);
-- `sum` over an empty set is 0 (§2.3, empty-set rules).
-
-**The rule to carry: an aggregate with zero contributing members never returns a
-value, whatever emptied it** — a declared gate, skip rules, or anything else.
-It is withheld, with a reason. **One refinement, for counts only:** a count
-emptied by an *answered* input returns 0. See "Counts and sums are not the same
-case" below.
-
-**This does not conflict with D1's other half.** A *partially* excluded section
-withholds only when the author declares it a gate. Branching that skips some
-members leaves the score valid. **That decision stands.** The broader rule
-covers only the case where *no* member contributes.
-
-### Counts and sums are not the same case: decided 2026-10-07 (Vasu)
-
-**A capsule rule, implemented in the engine. Content cannot express it.**
-Nothing in the authoring source or the expression grammar can distinguish why a
-set is empty, and no authoring declaration is to be added for it.
-
-- **A sum over zero members always withholds.** A sum asserts a magnitude, and
-  with no values there is no magnitude. Returning 0 states something nobody
-  produced.
-- **A count over zero members returns 0 only when the exclusion traces back to an
-  answered input.** Otherwise it withholds. "0 of 13 symptoms" is a claim about
-  the respondent, and with no answered cause nobody made it.
-- **The test is derived, not declared.** The engine knows which rule excluded the
-  members and whether that rule's own condition read answered inputs.
-- **The result records which case it was**, so a reader can tell a count of zero
-  that means *none* from one that means *nothing was asked*. This is a record
-  field, in the same territory as escalation 1's count of unanswered members.
-
-**Evidence: Alc Abu.** It is a count of #10a-e YES, at least 1. Measured at
-capsule `babc9b6` on the generated `en-US` definition:
-
-```
-#9 NO:               #10 visible 0/5   AlcAbu=false  absentInputs=[]
-#9 YES, #10a-e NO:   #10 visible 5/5   AlcAbu=false  absentInputs=[]
-#9 blank, #10 blank: #10 visible 5/5   AlcAbu=null   absentInputs=[q10a..q10e]
-```
-
-**#9 NO** is the case the rule is for. The respondent answered #9, that answer
-is what emptied #10, and the empty set means "does not drink". The count is 0
-and Alc Abu is `false`, which is the paper's answer and the clinically right
-one. **Today's engine already gives it. The rule keeps it while withholding
-every other empty count.**
-
-**A section never administered** has no answered cause, so its count withholds.
-
-**A blank gating item does not empty the set in this engine**, and the rule
-needs to say what that case is. Measured above: a skip rule whose condition is
-unanswered does not fire. #10 stays visible, its members are blank, and the
-result is escalation 1's path, not this one.
-
-- **Today:** no value, with the five members as absent inputs.
-- **Under escalation 1 as written:** a count of 0, with 5 unanswered reported.
-
-**The intent stated above is that a blank gate withholds. Escalation 1's "blank
-does not match", applied to members visible only because their gate was blank,
-would give 0 instead.** The capsule thread should settle the interaction in one
-place: does a count whose members are visible only because their gate is
-unanswered withhold, or count them as not matching?
-
-**Pan Syn and Other Anx Syn are unaffected either way.** The gating item's
-definite `false` already decides them.
-
-**Content is not affected today.** The PHQ-SADS source does not author the
-literal skip, as a recorded deviation (`phq-sads/DECISIONS.md`). **Any
-instrument whose skip logic can withdraw every member of a total is exposed
-until the rule lands.**
+**Replaced 2026-10-07.** The rule raised here (an aggregate with zero
+contributing members never returns a value, with a refinement for counts) and
+its evidence, `phq9Score=0` and Alc Abu, are now part of escalation 1's single
+rule. **The number is kept so that references to it still resolve.**

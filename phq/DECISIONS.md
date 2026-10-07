@@ -60,6 +60,13 @@ definition at capsule `babc9b6`:
 **This is escalated as platform work**, with these cases as its evidence:
 `../ESCALATIONS.md`, escalation 1. **Nothing here is authored around it.**
 
+**Under that rule a count answers only where the blank cannot change the result**,
+and declines where it can. The first case becomes `false`, and the second
+`true`. #2e blank with four others meeting stays at no value, correctly, because
+the blank decides it. The rule is deliberately more conservative than the paper,
+which assumes a complete form. **The #8 case is a conjunction, not a count**, and
+escalation 1 does not change it.
+
 ### #8 "either NO or left blank"
 
 The expression tests only `#8 = NO`, because a score may not test for a blank:
@@ -107,8 +114,10 @@ the one that decides. Measured: 2a-d at "More than half the days" with 2i at
 
 The form prints a Sex field but never prints a rule skipping #1d, and inventing
 one would be interpretation. **#1d is optional, because making it required
-forces an answer that does not apply.** Until escalation 1 lands, a blank #1d
-cancels the Som Dis criterion. **Escalation 1 is its fix.**
+forces an answer that does not apply.** Today a blank #1d
+cancels the Som Dis criterion. **Escalation 1 is its fix wherever #1d is not
+decisive.** With three others "a lot" the criterion is met. With two, #1d
+decides it, and the criterion correctly has no value.
 
 **#1e has the same shape and is required**, because the form gives no basis for
 treating it differently. Flagged for clinical review.
