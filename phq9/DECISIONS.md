@@ -330,3 +330,15 @@ The transcription was produced by the engine track and nobody has read it back
 against the documents. That is a normal state and it is stated rather than left
 blank, because a transcription that verifies itself is a check grading its own
 work.
+
+## This source no longer satisfies the current schema
+
+**Recorded 2026-10-07.** `source.json` declares `"sourceVersion": "1.1.0"` and
+carries `missingPolicy` on each score. Authoring source 2.0 renamed the first
+field to `authoringSchemaVersion`, accepts only 2.x, and removed the second.
+Measured with capsule `babc9b6`'s `check-source.mjs`: **INVALID**, missing
+`authoringSchemaVersion` at the document root (first violation only).
+
+**Left as it is, deliberately.** Nothing reads it today: the capsule's live walk
+uses its own in-repository sample. **Trigger to migrate: if this source is ever
+used for anything.**

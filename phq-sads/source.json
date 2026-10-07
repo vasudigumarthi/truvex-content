@@ -1,0 +1,777 @@
+{
+  "authoringSchemaVersion": "2.0.0",
+  "versions": {
+    "en-US": "1.0.0"
+  },
+  "instrument": {
+    "id": "urn:truvex:phq-sads:patient-health-questionnaire-sads",
+    "title": {
+      "en-US": "PATIENT HEALTH QUESTIONNAIRE (PHQ-SADS)"
+    },
+    "authority": {
+      "name": "Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc."
+    },
+    "attribution": {
+      "en-US": "Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute."
+    },
+    "languages": [
+      "en-US"
+    ],
+    "executionMode": "deterministic"
+  },
+  "groups": [
+    {
+      "id": "sectionA",
+      "parentGroupId": null,
+      "order": 0,
+      "label": {
+        "en-US": "During the last 4 weeks, how much have you been bothered by any of the following problems?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "sectionB",
+      "parentGroupId": null,
+      "order": 1,
+      "label": {
+        "en-US": "Over the last 2 weeks, how often have you been bothered by any of the following problems?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "sectionC",
+      "parentGroupId": null,
+      "order": 2,
+      "label": {
+        "en-US": "Questions about anxiety attacks."
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "sectionD",
+      "parentGroupId": null,
+      "order": 3,
+      "label": {
+        "en-US": "Over the last 2 weeks, how often have you been bothered by any of the following problems?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "sectionE",
+      "parentGroupId": null,
+      "order": 4,
+      "label": {
+        "en-US": "If you checked off any problems on this questionnaire, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "intro",
+      "type": "display",
+      "parentGroupId": null,
+      "order": 0,
+      "required": false,
+      "prompt": {
+        "en-US": "This questionnaire is an important part of providing you with the best health care possible. Your answers will help in understanding problems that you may have. Please answer every question to the best of your ability"
+      }
+    },
+    {
+      "id": "a1",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 0,
+      "prompt": {
+        "en-US": "Stomach pain"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a2",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 1,
+      "prompt": {
+        "en-US": "Back pain"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a3",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 2,
+      "prompt": {
+        "en-US": "Pain in your arms, legs, or joints (knees, hips, etc.)"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a4",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 3,
+      "prompt": {
+        "en-US": "Feeling tired or having little energy"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a5",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 4,
+      "prompt": {
+        "en-US": "Trouble falling or staying asleep, or sleeping too much"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a6",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 5,
+      "prompt": {
+        "en-US": "Menstrual cramps or other problems with your periods"
+      },
+      "required": false,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a7",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 6,
+      "prompt": {
+        "en-US": "Pain or problems during sexual intercourse"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a8",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 7,
+      "prompt": {
+        "en-US": "Headaches"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a9",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 8,
+      "prompt": {
+        "en-US": "Chest pain"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a10",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 9,
+      "prompt": {
+        "en-US": "Dizziness"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a11",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 10,
+      "prompt": {
+        "en-US": "Fainting spells"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a12",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 11,
+      "prompt": {
+        "en-US": "Feeling your heart pound or race"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a13",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 12,
+      "prompt": {
+        "en-US": "Shortness of breath"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a14",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 13,
+      "prompt": {
+        "en-US": "Constipation, loose bowels, or diarrhea"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "a15",
+      "type": "choice",
+      "parentGroupId": "sectionA",
+      "order": 14,
+      "prompt": {
+        "en-US": "Nausea, gas, or indigestion"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "b1",
+      "type": "choice",
+      "parentGroupId": "sectionB",
+      "order": 0,
+      "prompt": {
+        "en-US": "Feeling nervous anxiety or on edge"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "b2",
+      "type": "choice",
+      "parentGroupId": "sectionB",
+      "order": 1,
+      "prompt": {
+        "en-US": "Not being able to stop or control worrying"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "b3",
+      "type": "choice",
+      "parentGroupId": "sectionB",
+      "order": 2,
+      "prompt": {
+        "en-US": "Worrying too much about different things"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "b4",
+      "type": "choice",
+      "parentGroupId": "sectionB",
+      "order": 3,
+      "prompt": {
+        "en-US": "Trouble relaxing"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "b5",
+      "type": "choice",
+      "parentGroupId": "sectionB",
+      "order": 4,
+      "prompt": {
+        "en-US": "Being so restless that it is hard to sit still"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "b6",
+      "type": "choice",
+      "parentGroupId": "sectionB",
+      "order": 5,
+      "prompt": {
+        "en-US": "Becoming easily annoyed or irritable"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "b7",
+      "type": "choice",
+      "parentGroupId": "sectionB",
+      "order": 6,
+      "prompt": {
+        "en-US": "Feeling afraid as if something awful might happen"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "cA",
+      "type": "choice",
+      "parentGroupId": "sectionC",
+      "order": 0,
+      "prompt": {
+        "en-US": "In the last 4 weeks, have you had an anxiety attack — suddenly feeling fear or panic?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "cB",
+      "type": "choice",
+      "parentGroupId": "sectionC",
+      "order": 1,
+      "prompt": {
+        "en-US": "Has this ever happened before?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "cC",
+      "type": "choice",
+      "parentGroupId": "sectionC",
+      "order": 2,
+      "prompt": {
+        "en-US": "Do some of these attacks come suddenly out of the blue — that is, in situations where you don’t expect to be nervous or uncomfortable?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "cD",
+      "type": "choice",
+      "parentGroupId": "sectionC",
+      "order": 3,
+      "prompt": {
+        "en-US": "Do these attacks bother you a lot or are you worried about having another attack?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "cE",
+      "type": "choice",
+      "parentGroupId": "sectionC",
+      "order": 4,
+      "prompt": {
+        "en-US": "During your last bad anxiety attack, did you have symptoms like shortness of breath, sweating, or your heart racing, pounding or skipping?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "d1",
+      "type": "choice",
+      "parentGroupId": "sectionD",
+      "order": 0,
+      "prompt": {
+        "en-US": "Little interest or pleasure in doing things"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "d2",
+      "type": "choice",
+      "parentGroupId": "sectionD",
+      "order": 1,
+      "prompt": {
+        "en-US": "Feeling down, depressed, or hopeless"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "d3",
+      "type": "choice",
+      "parentGroupId": "sectionD",
+      "order": 2,
+      "prompt": {
+        "en-US": "Trouble falling or staying asleep, or sleeping too much"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "d4",
+      "type": "choice",
+      "parentGroupId": "sectionD",
+      "order": 3,
+      "prompt": {
+        "en-US": "Feeling tired or having little energy"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "d5",
+      "type": "choice",
+      "parentGroupId": "sectionD",
+      "order": 4,
+      "prompt": {
+        "en-US": "Poor appetite or overeating"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "d6",
+      "type": "choice",
+      "parentGroupId": "sectionD",
+      "order": 5,
+      "prompt": {
+        "en-US": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "d7",
+      "type": "choice",
+      "parentGroupId": "sectionD",
+      "order": 6,
+      "prompt": {
+        "en-US": "Trouble concentrating on things, such as reading the newspaper or watching television"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "d8",
+      "type": "choice",
+      "parentGroupId": "sectionD",
+      "order": 7,
+      "prompt": {
+        "en-US": "Moving or speaking so slowly that other people could have noticed? Or the opposite – being so fidgety or restless that you have been moving around a lot more than usual"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "d9",
+      "type": "choice",
+      "parentGroupId": "sectionD",
+      "order": 8,
+      "prompt": {
+        "en-US": "Thoughts that you would be beter off dead of or hurting yourself in some way"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "e",
+      "type": "choice",
+      "parentGroupId": "sectionE",
+      "order": 0,
+      "prompt": {
+        "en-US": "If you checked off any problems on this questionnaire, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
+      },
+      "required": false,
+      "optionSetId": "difficultyFourPoint"
+    }
+  ],
+  "optionSets": [
+    {
+      "id": "botherThreePoint",
+      "options": [
+        {
+          "code": "b0",
+          "order": 0,
+          "score": 0,
+          "label": {
+            "en-US": "Not bothered"
+          }
+        },
+        {
+          "code": "b1",
+          "order": 1,
+          "score": 1,
+          "label": {
+            "en-US": "Bothered a little"
+          }
+        },
+        {
+          "code": "b2",
+          "order": 2,
+          "score": 2,
+          "label": {
+            "en-US": "Bothered a lot"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frequencyFourPoint",
+      "options": [
+        {
+          "code": "f0",
+          "order": 0,
+          "score": 0,
+          "label": {
+            "en-US": "Not at all"
+          }
+        },
+        {
+          "code": "f1",
+          "order": 1,
+          "score": 1,
+          "label": {
+            "en-US": "Several days"
+          }
+        },
+        {
+          "code": "f2",
+          "order": 2,
+          "score": 2,
+          "label": {
+            "en-US": "More than half the days"
+          }
+        },
+        {
+          "code": "f3",
+          "order": 3,
+          "score": 3,
+          "label": {
+            "en-US": "Nearly every day"
+          }
+        }
+      ]
+    },
+    {
+      "id": "noYes",
+      "options": [
+        {
+          "code": "no",
+          "order": 0,
+          "label": {
+            "en-US": "NO"
+          }
+        },
+        {
+          "code": "yes",
+          "order": 1,
+          "label": {
+            "en-US": "YES"
+          }
+        }
+      ]
+    },
+    {
+      "id": "difficultyFourPoint",
+      "options": [
+        {
+          "code": "d0",
+          "order": 0,
+          "label": {
+            "en-US": "Not difficult at all"
+          }
+        },
+        {
+          "code": "d1",
+          "order": 1,
+          "label": {
+            "en-US": "Somewhat difficult"
+          }
+        },
+        {
+          "code": "d2",
+          "order": 2,
+          "label": {
+            "en-US": "Very difficult"
+          }
+        },
+        {
+          "code": "d3",
+          "order": 3,
+          "label": {
+            "en-US": "Extremely difficult"
+          }
+        }
+      ]
+    }
+  ],
+  "scoring": [
+    {
+      "id": "phq15Score",
+      "label": {
+        "en-US": "PHQ-15 Score"
+      },
+      "resultType": "number",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": true,
+      "expression": {
+        "op": "aggregate",
+        "fn": "sum",
+        "of": "score",
+        "source": {
+          "kind": "items",
+          "itemIds": [
+            "a1",
+            "a2",
+            "a3",
+            "a4",
+            "a5",
+            "a6",
+            "a7",
+            "a8",
+            "a9",
+            "a10",
+            "a11",
+            "a12",
+            "a13",
+            "a14",
+            "a15"
+          ]
+        }
+      }
+    },
+    {
+      "id": "gad7Score",
+      "label": {
+        "en-US": "GAD-7 Score"
+      },
+      "resultType": "number",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": true,
+      "expression": {
+        "op": "aggregate",
+        "fn": "sum",
+        "of": "score",
+        "source": {
+          "kind": "items",
+          "itemIds": [
+            "b1",
+            "b2",
+            "b3",
+            "b4",
+            "b5",
+            "b6",
+            "b7"
+          ]
+        }
+      }
+    },
+    {
+      "id": "phq9Score",
+      "label": {
+        "en-US": "PHQ-9 Score"
+      },
+      "resultType": "number",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": true,
+      "expression": {
+        "op": "aggregate",
+        "fn": "sum",
+        "of": "score",
+        "source": {
+          "kind": "items",
+          "itemIds": [
+            "d1",
+            "d2",
+            "d3",
+            "d4",
+            "d5",
+            "d6",
+            "d7",
+            "d8",
+            "d9"
+          ]
+        }
+      }
+    }
+  ],
+  "rules": [],
+  "provenance": {
+    "languages": {
+      "en-US": {
+        "sourced": true,
+        "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ-SADS), English",
+        "publisher": "No publisher is named; the document states: Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc.",
+        "retrievedFrom": "Not recorded when the document was placed; the committed file is the reference: truvex-content commit 0c54df3, phq-sads/sources/PHQ-SADS-English_1.pdf",
+        "retrievedAt": "2026-10-07",
+        "digest": "sha256:ff48f84ce6d018c7b569664f2eae0dfb2a5f8e75d6b9d1e99a3f32c5ea428974",
+        "transcribedBy": {
+          "role": "language model, transcribed from PDF without human review",
+          "id": "claude-opus-5-5",
+          "method": "textLayerAndImage"
+        },
+        "verifiedBy": {
+          "verified": false,
+          "note": "Nobody has verified this transcription. Demonstration content only: delivery content needs a real transcriber and a real verifier."
+        },
+        "notes": "Two pages. Transcribed from the text layer and checked against the page image. Carried as printed, errors included: B1 “Feeling nervous anxiety or on edge” and D9 “beter off dead of or hurting”. D8 prints an en dash, D6 an em dash; both kept. C a and C c read U+23AF in the text layer and print an em dash, carried as U+2014. The opening paragraph has no closing full stop, as printed. Not carried: dot leaders, the score boxes and blanks, the skip instruction at C a (see DECISIONS.md), page layout, the footer's second printing."
+      }
+    },
+    "scoring": [
+      {
+        "target": "phq15Score",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ-SADS), English",
+          "locus": "Page 1, “PHQ-15 Score = ___ + ___” beneath section A; item scores from the column headings (0), (1), (2)",
+          "digest": "sha256:ff48f84ce6d018c7b569664f2eae0dfb2a5f8e75d6b9d1e99a3f32c5ea428974"
+        },
+        "attributedTo": "No citation is printed for the scores. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entry, from PDF, without human review. The printed sum over the column subtotals, authored as one sum over A1-15. Withheld when any item is blank, including A6, which is optional; no published rule for that case is held."
+      },
+      {
+        "target": "gad7Score",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ-SADS), English",
+          "locus": "Page 1, “GAD-7 Score = ___ + ___ + ___” beneath section B; item scores from the column headings (0) to (3)",
+          "digest": "sha256:ff48f84ce6d018c7b569664f2eae0dfb2a5f8e75d6b9d1e99a3f32c5ea428974"
+        },
+        "attributedTo": "No citation is printed for the scores. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entry, from PDF, without human review. The printed sum over the column subtotals, authored as one sum over B1-7. No severity bands are printed on this form and none are authored."
+      },
+      {
+        "target": "phq9Score",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ-SADS), English",
+          "locus": "Page 2, “PHQ-9 Score = ___ + ___ + ___” beneath section D; item scores from the column headings (0) to (3)",
+          "digest": "sha256:ff48f84ce6d018c7b569664f2eae0dfb2a5f8e75d6b9d1e99a3f32c5ea428974"
+        },
+        "attributedTo": "No citation is printed for the scores. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entry, from PDF, without human review. The printed sum over the column subtotals, authored as one sum over D1-9. No severity bands are printed on this form and none are authored."
+      }
+    ]
+  }
+}

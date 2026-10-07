@@ -1,0 +1,2531 @@
+{
+  "authoringSchemaVersion": "2.0.0",
+  "versions": {
+    "en-US": "1.0.0",
+    "it-IT": "1.0.0"
+  },
+  "instrument": {
+    "id": "urn:truvex:phq:patient-health-questionnaire",
+    "title": {
+      "en-US": "PATIENT HEALTH QUESTIONNAIRE (PHQ)",
+      "it-IT": "QUESTIONARIO SULLA SALUTE DEL/DELLA PAZIENTE (PHQ)"
+    },
+    "authority": {
+      "name": "Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc."
+    },
+    "attribution": {
+      "en-US": "Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc. No permission required to reproduce, translate, display or distribute.",
+      "it-IT": "Elaborato dai dottori Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke e colleghi, con un finanziamento da parte della Pfizer Inc. Non è richiesto un permesso per la riproduzione, traduzione, visualizzazione o distribuzione."
+    },
+    "languages": [
+      "en-US",
+      "it-IT"
+    ],
+    "executionMode": "deterministic"
+  },
+  "groups": [
+    {
+      "id": "section1",
+      "parentGroupId": null,
+      "order": 0,
+      "label": {
+        "en-US": "During the last 4 weeks, how much have you been bothered by any of the following problems?",
+        "it-IT": "Nelle ultime 4 settimane, quanto le ha dato fastidio ciascuno dei seguenti problemi?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "section2",
+      "parentGroupId": null,
+      "order": 1,
+      "label": {
+        "en-US": "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
+        "it-IT": "Nelle ultime 2 settimane, con quale frequenza le ha dato fastidio ciascuno dei seguenti problemi?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "section3",
+      "parentGroupId": null,
+      "order": 2,
+      "label": {
+        "en-US": "Questions about anxiety.",
+        "it-IT": "Domande sull’ansia."
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "section4",
+      "parentGroupId": null,
+      "order": 3,
+      "label": {
+        "en-US": "Think about your last bad anxiety attack.",
+        "it-IT": "Pensi all’ultimo brutto attacco d’ansia."
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "section5",
+      "parentGroupId": null,
+      "order": 4,
+      "label": {
+        "en-US": "Over the last 4 weeks, how often have you been bothered by any of the following problems?",
+        "it-IT": "Nelle ultime 4 settimane, con quale frequenza le ha dato fastidio ciascuno dei seguenti problemi?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "section6",
+      "parentGroupId": null,
+      "order": 5,
+      "label": {
+        "en-US": "Questions about eating.",
+        "it-IT": "Domande sulle abitudini alimentari."
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "section7",
+      "parentGroupId": null,
+      "order": 6,
+      "label": {
+        "en-US": "In the last 3 months have you often done any of the following in order to avoid gaining weight?",
+        "it-IT": "Negli ultimi 3 mesi ha fatto spesso qualcuna delle seguenti cose per evitare di aumentare di peso?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "section8",
+      "parentGroupId": null,
+      "order": 7,
+      "label": {
+        "en-US": "If you checked “YES” to any of these ways of avoiding gaining weight, were any as often, on average, as twice a week?",
+        "it-IT": "Se ha risposto “SÌ” a uno qualsiasi di questi modi per evitare di aumentare di peso, questo le è capitato in media due volte alla settimana?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "section9",
+      "parentGroupId": null,
+      "order": 8,
+      "label": {
+        "en-US": "Do you ever drink alcohol (including beer or wine)?",
+        "it-IT": "Beve mai alcolici (compresi birra o vino)?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "section10",
+      "parentGroupId": null,
+      "order": 9,
+      "label": {
+        "en-US": "Have any of the following happened to you more than once in the last 6 months?",
+        "it-IT": "Le è capitata una delle seguenti cose più di una volta negli ultimi 6 mesi?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    },
+    {
+      "id": "section11",
+      "parentGroupId": null,
+      "order": 10,
+      "label": {
+        "en-US": "If you checked off any problems on this questionnaire, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+        "it-IT": "Se ha fatto una crocetta su un qualsiasi problema di questo questionario, quanto questi problemi le hanno reso difficile fare il suo lavoro, occuparsi delle sue cose a casa o avere buoni rapporti con gli altri?"
+      },
+      "repetition": {
+        "mode": "none",
+        "ordering": "unordered"
+      }
+    }
+  ],
+  "items": [
+    {
+      "id": "intro",
+      "type": "display",
+      "parentGroupId": null,
+      "order": 0,
+      "required": false,
+      "prompt": {
+        "en-US": "This questionnaire is an important part of providing you with the best health care possible. Your answers will help in understanding problems that you may have. Please answer every question to the best of your ability unless you are requested to skip over a question.",
+        "it-IT": "Questo questionario è uno strumento importante per offrirle la migliore assistenza sanitaria possibile. Le sue risposte serviranno a capire i problemi che lei può avere. La preghiamo di dare la risposta che meglio corrisponde al suo caso, a meno che non le venga chiesto di saltare una domanda."
+      }
+    },
+    {
+      "id": "q1a",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 0,
+      "prompt": {
+        "en-US": "Stomach pain",
+        "it-IT": "Mal di stomaco"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1b",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 1,
+      "prompt": {
+        "en-US": "Back pain",
+        "it-IT": "Mal di schiena"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1c",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 2,
+      "prompt": {
+        "en-US": "Pain in your arms, legs, or joints (knees, hips, etc.)",
+        "it-IT": "Dolore alle braccia, alle gambe o alle articolazioni (ginocchia, anche, ecc.)"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1d",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 3,
+      "prompt": {
+        "en-US": "Menstrual cramps or other problems with your periods",
+        "it-IT": "Dolori mestruali o altri disturbi mestruali"
+      },
+      "required": false,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1e",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 4,
+      "prompt": {
+        "en-US": "Pain or problems during sexual intercourse",
+        "it-IT": "Dolore o problemi durante i rapporti sessuali"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1f",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 5,
+      "prompt": {
+        "en-US": "Headaches",
+        "it-IT": "Mal di testa"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1g",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 6,
+      "prompt": {
+        "en-US": "Chest pain",
+        "it-IT": "Dolore al torace"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1h",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 7,
+      "prompt": {
+        "en-US": "Dizziness",
+        "it-IT": "Giramenti di testa"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1i",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 8,
+      "prompt": {
+        "en-US": "Fainting spells",
+        "it-IT": "Episodi di svenimento"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1j",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 9,
+      "prompt": {
+        "en-US": "Feeling your heart pound or race",
+        "it-IT": "Sentire il cuore battere forte o accelerato"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1k",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 10,
+      "prompt": {
+        "en-US": "Shortness of breath",
+        "it-IT": "Fiato corto"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1l",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 11,
+      "prompt": {
+        "en-US": "Constipation, loose bowels, or diarrhea",
+        "it-IT": "Stitichezza, feci molli o inconsistenti o diarrea"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q1m",
+      "type": "choice",
+      "parentGroupId": "section1",
+      "order": 12,
+      "prompt": {
+        "en-US": "Nausea, gas, or indigestion",
+        "it-IT": "Nausea, aria nella pancia o nello stomaco o indigestione"
+      },
+      "required": true,
+      "optionSetId": "botherThreePoint"
+    },
+    {
+      "id": "q2a",
+      "type": "choice",
+      "parentGroupId": "section2",
+      "order": 0,
+      "prompt": {
+        "en-US": "Little interest or pleasure in doing things",
+        "it-IT": "Scarso interesse o piacere nel fare le cose"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "q2b",
+      "type": "choice",
+      "parentGroupId": "section2",
+      "order": 1,
+      "prompt": {
+        "en-US": "Feeling down, depressed, or hopeless",
+        "it-IT": "Sentirsi giù, triste o disperato/a"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "q2c",
+      "type": "choice",
+      "parentGroupId": "section2",
+      "order": 2,
+      "prompt": {
+        "en-US": "Trouble falling or staying asleep, or sleeping too much",
+        "it-IT": "Problemi ad addormentarsi o a dormire tutta la notte senza svegliarsi, o a dormire troppo"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "q2d",
+      "type": "choice",
+      "parentGroupId": "section2",
+      "order": 3,
+      "prompt": {
+        "en-US": "Feeling tired or having little energy",
+        "it-IT": "Sentirsi stanco/a o avere poca energia"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "q2e",
+      "type": "choice",
+      "parentGroupId": "section2",
+      "order": 4,
+      "prompt": {
+        "en-US": "Poor appetite or overeating",
+        "it-IT": "Scarso appetito o mangiare troppo"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "q2f",
+      "type": "choice",
+      "parentGroupId": "section2",
+      "order": 5,
+      "prompt": {
+        "en-US": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down",
+        "it-IT": "Avere una scarsa opinione di sé, o sentirsi un/una fallito/a o aver deluso se stesso/a o i propri familiari"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "q2g",
+      "type": "choice",
+      "parentGroupId": "section2",
+      "order": 6,
+      "prompt": {
+        "en-US": "Trouble concentrating on things, such as reading the newspaper or watching television",
+        "it-IT": "Difficoltà a concentrarsi su qualcosa, per esempio leggere il giornale o guardare la televisione"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "q2h",
+      "type": "choice",
+      "parentGroupId": "section2",
+      "order": 7,
+      "prompt": {
+        "en-US": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
+        "it-IT": "Muoversi o parlare così lentamente da poter essere notato/a da altre persone. O, al contrario, essere così irrequieto/a da muoversi molto più del solito"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "q2i",
+      "type": "choice",
+      "parentGroupId": "section2",
+      "order": 8,
+      "prompt": {
+        "en-US": "Thoughts that you would be better off dead or of hurting yourself in some way",
+        "it-IT": "Pensare che sarebbe meglio morire o farsi del male in un modo o nell’altro"
+      },
+      "required": true,
+      "optionSetId": "frequencyFourPoint"
+    },
+    {
+      "id": "q3a",
+      "type": "choice",
+      "parentGroupId": "section3",
+      "order": 0,
+      "prompt": {
+        "en-US": "In the last 4 weeks, have you had an anxiety attack — suddenly feeling fear or panic?",
+        "it-IT": "Nelle ultime 4 settimane, ha avuto un attacco d’ansia, provando all’improvviso un senso di paura o di panico?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q3b",
+      "type": "choice",
+      "parentGroupId": "section3",
+      "order": 1,
+      "prompt": {
+        "en-US": "Has this ever happened before?",
+        "it-IT": "Le è mai capitato prima?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q3c",
+      "type": "choice",
+      "parentGroupId": "section3",
+      "order": 2,
+      "prompt": {
+        "en-US": "Do some of these attacks come suddenly out of the blue — that is, in situations where you don’t expect to be nervous or uncomfortable?",
+        "it-IT": "Alcuni di questi attacchi le capitano all’improvviso, cioè in situazioni in cui non si aspetta di essere nervoso/a o a disagio?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q3d",
+      "type": "choice",
+      "parentGroupId": "section3",
+      "order": 3,
+      "prompt": {
+        "en-US": "Do these attacks bother you a lot or are you worried about having another attack?",
+        "it-IT": "Questi attacchi le danno molto fastidio o è preoccupato/a di avere un altro attacco?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q4a",
+      "type": "choice",
+      "parentGroupId": "section4",
+      "order": 0,
+      "prompt": {
+        "en-US": "Were you short of breath?",
+        "it-IT": "Ha avuto il fiato corto?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q4b",
+      "type": "choice",
+      "parentGroupId": "section4",
+      "order": 1,
+      "prompt": {
+        "en-US": "Did your heart race, pound, or skip?",
+        "it-IT": "Ha sentito il cuore battere forte, accelerato o perdere colpi?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q4c",
+      "type": "choice",
+      "parentGroupId": "section4",
+      "order": 2,
+      "prompt": {
+        "en-US": "Did you have chest pain or pressure?",
+        "it-IT": "Ha avuto male o senso di peso al torace?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q4d",
+      "type": "choice",
+      "parentGroupId": "section4",
+      "order": 3,
+      "prompt": {
+        "en-US": "Did you sweat?",
+        "it-IT": "Ha sudato?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q4e",
+      "type": "choice",
+      "parentGroupId": "section4",
+      "order": 4,
+      "prompt": {
+        "en-US": "Did you feel as if you were choking?",
+        "it-IT": "Le è sembrato di soffocare?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q4f",
+      "type": "choice",
+      "parentGroupId": "section4",
+      "order": 5,
+      "prompt": {
+        "en-US": "Did you have hot flashes or chills?",
+        "it-IT": "Ha avuto vampate di calore o brividi di freddo?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q4g",
+      "type": "choice",
+      "parentGroupId": "section4",
+      "order": 6,
+      "prompt": {
+        "en-US": "Did you have nausea or an upset stomach, or the feeling that you were going to have diarrhea?",
+        "it-IT": "Ha avuto nausea o lo stomaco sottosopra, o la sensazione che le stesse venendo la diarrea?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q4h",
+      "type": "choice",
+      "parentGroupId": "section4",
+      "order": 7,
+      "prompt": {
+        "en-US": "Did you feel dizzy, unsteady, or faint?",
+        "it-IT": "Si è sentito/a girare la testa, perdere l’equilibrio o sul punto di svenire?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q4i",
+      "type": "choice",
+      "parentGroupId": "section4",
+      "order": 8,
+      "prompt": {
+        "en-US": "Did you have tingling or numbness in parts of your body?...",
+        "it-IT": "Ha avuto formicolii o intorpidimento in qualche parte del corpo?..."
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q4j",
+      "type": "choice",
+      "parentGroupId": "section4",
+      "order": 9,
+      "prompt": {
+        "en-US": "Did you tremble or shake?",
+        "it-IT": "Ha avuto tremori?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q4k",
+      "type": "choice",
+      "parentGroupId": "section4",
+      "order": 10,
+      "prompt": {
+        "en-US": "Were you afraid you were dying?",
+        "it-IT": "Ha avuto paura di morire?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q5a",
+      "type": "choice",
+      "parentGroupId": "section5",
+      "order": 0,
+      "prompt": {
+        "en-US": "Feeling nervous, anxious, on edge, or worrying a lot about different things.",
+        "it-IT": "Sentirsi nervoso/a, ansioso/a, teso/a, o molto preoccupato/a per vari motivi."
+      },
+      "required": true,
+      "optionSetId": "frequencyThreePoint"
+    },
+    {
+      "id": "q5b",
+      "type": "choice",
+      "parentGroupId": "section5",
+      "order": 1,
+      "prompt": {
+        "en-US": "Feeling restless so that it is hard to sit still.",
+        "it-IT": "Sentirsi talmente irrequieto/a da non riuscire a stare seduto/a fermo/a."
+      },
+      "required": true,
+      "optionSetId": "frequencyThreePoint"
+    },
+    {
+      "id": "q5c",
+      "type": "choice",
+      "parentGroupId": "section5",
+      "order": 2,
+      "prompt": {
+        "en-US": "Getting tired very easily.",
+        "it-IT": "Stancarsi molto facilmente."
+      },
+      "required": true,
+      "optionSetId": "frequencyThreePoint"
+    },
+    {
+      "id": "q5d",
+      "type": "choice",
+      "parentGroupId": "section5",
+      "order": 3,
+      "prompt": {
+        "en-US": "Muscle tension, aches, or soreness.",
+        "it-IT": "Tensione muscolare dolori o indolenzimento."
+      },
+      "required": true,
+      "optionSetId": "frequencyThreePoint"
+    },
+    {
+      "id": "q5e",
+      "type": "choice",
+      "parentGroupId": "section5",
+      "order": 4,
+      "prompt": {
+        "en-US": "Trouble falling asleep or staying asleep.",
+        "it-IT": "Problemi ad addormentarsi o a dormire tutta la notte senza svegliarsi."
+      },
+      "required": true,
+      "optionSetId": "frequencyThreePoint"
+    },
+    {
+      "id": "q5f",
+      "type": "choice",
+      "parentGroupId": "section5",
+      "order": 5,
+      "prompt": {
+        "en-US": "Trouble concentrating on things, such as reading a book or watching TV.",
+        "it-IT": "Difficoltà a concentrarsi su qualcosa, per esempio leggere un libro o guardare la televisione."
+      },
+      "required": true,
+      "optionSetId": "frequencyThreePoint"
+    },
+    {
+      "id": "q5g",
+      "type": "choice",
+      "parentGroupId": "section5",
+      "order": 6,
+      "prompt": {
+        "en-US": "Becoming easily annoyed or irritable.",
+        "it-IT": "Infastidirsi o irritarsi facilmente."
+      },
+      "required": true,
+      "optionSetId": "frequencyThreePoint"
+    },
+    {
+      "id": "q6a",
+      "type": "choice",
+      "parentGroupId": "section6",
+      "order": 0,
+      "prompt": {
+        "en-US": "Do you often feel that you can’t control what or how much you eat?",
+        "it-IT": "Ha spesso la sensazione di non riuscire a controllare cosa o quanto mangia?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q6b",
+      "type": "choice",
+      "parentGroupId": "section6",
+      "order": 1,
+      "prompt": {
+        "en-US": "Do you often eat, within any 2-hour period, what most people would regard as an unusually large amount of food?",
+        "it-IT": "Le è capitato spesso, nell’arco di 2 ore, di mangiare ciò che la maggior parte delle persone considererebbe come una quantità di cibo insolitamente grande?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q6c",
+      "type": "choice",
+      "parentGroupId": "section6",
+      "order": 2,
+      "prompt": {
+        "en-US": "Has this been as often, on average, as twice a week for the last 3 months?",
+        "it-IT": "Le è capitato, in media, due volte alla settimana negli ultimi 3 mesi?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q7a",
+      "type": "choice",
+      "parentGroupId": "section7",
+      "order": 0,
+      "prompt": {
+        "en-US": "Made yourself vomit?",
+        "it-IT": "Provocarsi il vomito?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q7b",
+      "type": "choice",
+      "parentGroupId": "section7",
+      "order": 1,
+      "prompt": {
+        "en-US": "Took more than twice the recommended dose of laxatives?",
+        "it-IT": "Prendere più del doppio della dose di lassativi consigliata?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q7c",
+      "type": "choice",
+      "parentGroupId": "section7",
+      "order": 2,
+      "prompt": {
+        "en-US": "Fasted — not eaten anything at all for at least 24 hours?",
+        "it-IT": "Digiunare — non mangiare assolutamente nulla per almeno 24 ore?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q7d",
+      "type": "choice",
+      "parentGroupId": "section7",
+      "order": 3,
+      "prompt": {
+        "en-US": "Exercised for more than an hour specifically to avoid gaining weight after binge eating?",
+        "it-IT": "Fare esercizio fisico per più di un’ora, proprio per evitare di aumentare di peso dopo essersi abbuffato/a?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q8",
+      "type": "choice",
+      "parentGroupId": "section8",
+      "order": 0,
+      "prompt": {
+        "en-US": "If you checked “YES” to any of these ways of avoiding gaining weight, were any as often, on average, as twice a week?",
+        "it-IT": "Se ha risposto “SÌ” a uno qualsiasi di questi modi per evitare di aumentare di peso, questo le è capitato in media due volte alla settimana?"
+      },
+      "required": false,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q9",
+      "type": "choice",
+      "parentGroupId": "section9",
+      "order": 0,
+      "prompt": {
+        "en-US": "Do you ever drink alcohol (including beer or wine)?",
+        "it-IT": "Beve mai alcolici (compresi birra o vino)?"
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q10a",
+      "type": "choice",
+      "parentGroupId": "section10",
+      "order": 0,
+      "prompt": {
+        "en-US": "You drank alcohol even though a doctor suggested that you stop drinking because of a problem with your health.",
+        "it-IT": "Ha bevuto alcolici nonostante il medico le avesse consigliato di smettere di bere a causa di un suo problema di salute."
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q10b",
+      "type": "choice",
+      "parentGroupId": "section10",
+      "order": 1,
+      "prompt": {
+        "en-US": "You drank alcohol, were high from alcohol, or hung over while you were working, going to school, or taking care of children or other responsibilities.",
+        "it-IT": "Ha bevuto alcolici, era leggermente ubriaco/a, o era ancora sotto l’effetto dell’alcol mentre lavorava, andava a scuola, si prendeva cura di bambini o aveva altre responsabilità."
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q10c",
+      "type": "choice",
+      "parentGroupId": "section10",
+      "order": 2,
+      "prompt": {
+        "en-US": "You missed or were late for work, school, or other activities because you were drinking or hung over.",
+        "it-IT": "È mancato/a o è arrivato/a tardi al lavoro, a scuola o altro perché aveva bevuto o era ancora sotto l’effetto dell’alcol."
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q10d",
+      "type": "choice",
+      "parentGroupId": "section10",
+      "order": 3,
+      "prompt": {
+        "en-US": "You had a problem getting along with other people while you were drinking.",
+        "it-IT": "Ha avuto problemi nei rapporti con gli altri a causa dell’alcol."
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q10e",
+      "type": "choice",
+      "parentGroupId": "section10",
+      "order": 4,
+      "prompt": {
+        "en-US": "You drove a car after having several drinks or after drinking too much.",
+        "it-IT": "Ha guidato l’auto dopo aver bevuto parecchi bicchieri o dopo aver bevuto troppo."
+      },
+      "required": true,
+      "optionSetId": "noYes"
+    },
+    {
+      "id": "q11",
+      "type": "choice",
+      "parentGroupId": "section11",
+      "order": 0,
+      "prompt": {
+        "en-US": "If you checked off any problems on this questionnaire, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+        "it-IT": "Se ha fatto una crocetta su un qualsiasi problema di questo questionario, quanto questi problemi le hanno reso difficile fare il suo lavoro, occuparsi delle sue cose a casa o avere buoni rapporti con gli altri?"
+      },
+      "required": false,
+      "optionSetId": "difficultyFourPoint"
+    }
+  ],
+  "optionSets": [
+    {
+      "id": "botherThreePoint",
+      "options": [
+        {
+          "code": "b0",
+          "order": 0,
+          "label": {
+            "en-US": "Not bothered",
+            "it-IT": "Nessun fastidio"
+          }
+        },
+        {
+          "code": "b1",
+          "order": 1,
+          "label": {
+            "en-US": "Bothered a little",
+            "it-IT": "Un po’ di fastidio"
+          }
+        },
+        {
+          "code": "b2",
+          "order": 2,
+          "label": {
+            "en-US": "Bothered a lot",
+            "it-IT": "Molto fastidio"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frequencyFourPoint",
+      "options": [
+        {
+          "code": "f0",
+          "order": 0,
+          "label": {
+            "en-US": "Not at all",
+            "it-IT": "Mai"
+          }
+        },
+        {
+          "code": "f1",
+          "order": 1,
+          "label": {
+            "en-US": "Several days",
+            "it-IT": "Alcuni giorni"
+          }
+        },
+        {
+          "code": "f2",
+          "order": 2,
+          "label": {
+            "en-US": "More than half the days",
+            "it-IT": "Oltre la metà dei giorni"
+          }
+        },
+        {
+          "code": "f3",
+          "order": 3,
+          "label": {
+            "en-US": "Nearly every day",
+            "it-IT": "Quasi ogni giorno"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frequencyThreePoint",
+      "options": [
+        {
+          "code": "f0",
+          "order": 0,
+          "label": {
+            "en-US": "Not at all",
+            "it-IT": "Mai"
+          }
+        },
+        {
+          "code": "f1",
+          "order": 1,
+          "label": {
+            "en-US": "Several days",
+            "it-IT": "Alcuni giorni"
+          }
+        },
+        {
+          "code": "f2",
+          "order": 2,
+          "label": {
+            "en-US": "More than half the days",
+            "it-IT": "Oltre la metà dei giorni"
+          }
+        }
+      ]
+    },
+    {
+      "id": "noYes",
+      "options": [
+        {
+          "code": "no",
+          "order": 0,
+          "label": {
+            "en-US": "NO",
+            "it-IT": "NO"
+          }
+        },
+        {
+          "code": "yes",
+          "order": 1,
+          "label": {
+            "en-US": "YES",
+            "it-IT": "SÌ"
+          }
+        }
+      ]
+    },
+    {
+      "id": "difficultyFourPoint",
+      "options": [
+        {
+          "code": "d0",
+          "order": 0,
+          "label": {
+            "en-US": "Not difficult at all",
+            "it-IT": "Per niente difficile"
+          }
+        },
+        {
+          "code": "d1",
+          "order": 1,
+          "label": {
+            "en-US": "Somewhat difficult",
+            "it-IT": "Abbastanza difficile"
+          }
+        },
+        {
+          "code": "d2",
+          "order": 2,
+          "label": {
+            "en-US": "Very difficult",
+            "it-IT": "Molto difficile"
+          }
+        },
+        {
+          "code": "d3",
+          "order": 3,
+          "label": {
+            "en-US": "Extremely difficult",
+            "it-IT": "Estremamente difficile"
+          }
+        }
+      ]
+    }
+  ],
+  "scoring": [
+    {
+      "id": "officeCodingSomDisSymptomCriterion",
+      "label": {
+        "en-US": "Office coding, Som Dis, symptom criterion only: at least 3 of #1a-m are “a lot”. The other printed criterion, lack of an adequate biological explanation, is a clinician judgment the form does not capture and is not evaluated.",
+        "it-IT": "Codifica d’ufficio, Som Dis, solo criterio dei sintomi: almeno 3 delle risposte #1a-m sono “Molto fastidio”. L’altro criterio stampato, l’assenza di una spiegazione biologica adeguata, è un giudizio clinico che il questionario non raccoglie e non viene valutato."
+      },
+      "expression": {
+        "op": "gte",
+        "left": {
+          "op": "aggregate",
+          "fn": "countWhere",
+          "of": "value",
+          "source": {
+            "kind": "items",
+            "itemIds": [
+              "q1a",
+              "q1b",
+              "q1c",
+              "q1d",
+              "q1e",
+              "q1f",
+              "q1g",
+              "q1h",
+              "q1i",
+              "q1j",
+              "q1k",
+              "q1l",
+              "q1m"
+            ]
+          },
+          "predicate": {
+            "op": "or",
+            "args": [
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1a"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1b"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1c"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1d"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1e"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1f"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1g"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1h"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1i"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1j"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1k"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1l"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q1m"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "b2"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "right": {
+          "op": "num",
+          "value": 3
+        }
+      },
+      "resultType": "boolean",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": true
+    },
+    {
+      "id": "depressiveItemsAtThreshold",
+      "label": {
+        "en-US": "Count of #2a-i at least “More than half the days”, #2i counted if present at all",
+        "it-IT": "Numero di risposte #2a-i almeno “Oltre la metà dei giorni”, #2i contata se presente"
+      },
+      "expression": {
+        "op": "aggregate",
+        "fn": "countWhere",
+        "of": "value",
+        "source": {
+          "kind": "items",
+          "itemIds": [
+            "q2a",
+            "q2b",
+            "q2c",
+            "q2d",
+            "q2e",
+            "q2f",
+            "q2g",
+            "q2h",
+            "q2i"
+          ]
+        },
+        "predicate": {
+          "op": "or",
+          "args": [
+            {
+              "op": "in",
+              "value": {
+                "op": "itemValue",
+                "itemId": "q2a"
+              },
+              "set": [
+                {
+                  "op": "str",
+                  "value": "f2"
+                },
+                {
+                  "op": "str",
+                  "value": "f3"
+                }
+              ]
+            },
+            {
+              "op": "in",
+              "value": {
+                "op": "itemValue",
+                "itemId": "q2b"
+              },
+              "set": [
+                {
+                  "op": "str",
+                  "value": "f2"
+                },
+                {
+                  "op": "str",
+                  "value": "f3"
+                }
+              ]
+            },
+            {
+              "op": "in",
+              "value": {
+                "op": "itemValue",
+                "itemId": "q2c"
+              },
+              "set": [
+                {
+                  "op": "str",
+                  "value": "f2"
+                },
+                {
+                  "op": "str",
+                  "value": "f3"
+                }
+              ]
+            },
+            {
+              "op": "in",
+              "value": {
+                "op": "itemValue",
+                "itemId": "q2d"
+              },
+              "set": [
+                {
+                  "op": "str",
+                  "value": "f2"
+                },
+                {
+                  "op": "str",
+                  "value": "f3"
+                }
+              ]
+            },
+            {
+              "op": "in",
+              "value": {
+                "op": "itemValue",
+                "itemId": "q2e"
+              },
+              "set": [
+                {
+                  "op": "str",
+                  "value": "f2"
+                },
+                {
+                  "op": "str",
+                  "value": "f3"
+                }
+              ]
+            },
+            {
+              "op": "in",
+              "value": {
+                "op": "itemValue",
+                "itemId": "q2f"
+              },
+              "set": [
+                {
+                  "op": "str",
+                  "value": "f2"
+                },
+                {
+                  "op": "str",
+                  "value": "f3"
+                }
+              ]
+            },
+            {
+              "op": "in",
+              "value": {
+                "op": "itemValue",
+                "itemId": "q2g"
+              },
+              "set": [
+                {
+                  "op": "str",
+                  "value": "f2"
+                },
+                {
+                  "op": "str",
+                  "value": "f3"
+                }
+              ]
+            },
+            {
+              "op": "in",
+              "value": {
+                "op": "itemValue",
+                "itemId": "q2h"
+              },
+              "set": [
+                {
+                  "op": "str",
+                  "value": "f2"
+                },
+                {
+                  "op": "str",
+                  "value": "f3"
+                }
+              ]
+            },
+            {
+              "op": "in",
+              "value": {
+                "op": "itemValue",
+                "itemId": "q2i"
+              },
+              "set": [
+                {
+                  "op": "str",
+                  "value": "f1"
+                },
+                {
+                  "op": "str",
+                  "value": "f2"
+                },
+                {
+                  "op": "str",
+                  "value": "f3"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "resultType": "number",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": false
+    },
+    {
+      "id": "officeCodingMajDepSyn",
+      "label": {
+        "en-US": "Office coding: Maj Dep Syn",
+        "it-IT": "Codifica d’ufficio: Maj Dep Syn"
+      },
+      "expression": {
+        "op": "and",
+        "args": [
+          {
+            "op": "or",
+            "args": [
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q2a"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "f2"
+                  },
+                  {
+                    "op": "str",
+                    "value": "f3"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q2b"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "f2"
+                  },
+                  {
+                    "op": "str",
+                    "value": "f3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "gte",
+            "left": {
+              "op": "scoreRef",
+              "scoreId": "depressiveItemsAtThreshold"
+            },
+            "right": {
+              "op": "num",
+              "value": 5
+            }
+          }
+        ]
+      },
+      "resultType": "boolean",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": true
+    },
+    {
+      "id": "officeCodingOtherDepSyn",
+      "label": {
+        "en-US": "Office coding: Other Dep Syn",
+        "it-IT": "Codifica d’ufficio: Other Dep Syn"
+      },
+      "expression": {
+        "op": "and",
+        "args": [
+          {
+            "op": "or",
+            "args": [
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q2a"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "f2"
+                  },
+                  {
+                    "op": "str",
+                    "value": "f3"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q2b"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "f2"
+                  },
+                  {
+                    "op": "str",
+                    "value": "f3"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "op": "gte",
+            "left": {
+              "op": "scoreRef",
+              "scoreId": "depressiveItemsAtThreshold"
+            },
+            "right": {
+              "op": "num",
+              "value": 2
+            }
+          },
+          {
+            "op": "lte",
+            "left": {
+              "op": "scoreRef",
+              "scoreId": "depressiveItemsAtThreshold"
+            },
+            "right": {
+              "op": "num",
+              "value": 4
+            }
+          }
+        ]
+      },
+      "resultType": "boolean",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": true
+    },
+    {
+      "id": "officeCodingPanSyn",
+      "label": {
+        "en-US": "Office coding: Pan Syn",
+        "it-IT": "Codifica d’ufficio: Pan Syn"
+      },
+      "expression": {
+        "op": "and",
+        "args": [
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q3a"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "yes"
+              }
+            ]
+          },
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q3b"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "yes"
+              }
+            ]
+          },
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q3c"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "yes"
+              }
+            ]
+          },
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q3d"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "yes"
+              }
+            ]
+          },
+          {
+            "op": "gte",
+            "left": {
+              "op": "aggregate",
+              "fn": "countWhere",
+              "of": "value",
+              "source": {
+                "kind": "items",
+                "itemIds": [
+                  "q4a",
+                  "q4b",
+                  "q4c",
+                  "q4d",
+                  "q4e",
+                  "q4f",
+                  "q4g",
+                  "q4h",
+                  "q4i",
+                  "q4j",
+                  "q4k"
+                ]
+              },
+              "predicate": {
+                "op": "or",
+                "args": [
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q4a"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q4b"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q4c"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q4d"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q4e"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q4f"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q4g"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q4h"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q4i"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q4j"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q4k"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "yes"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "right": {
+              "op": "num",
+              "value": 4
+            }
+          }
+        ]
+      },
+      "resultType": "boolean",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": true
+    },
+    {
+      "id": "officeCodingOtherAnxSyn",
+      "label": {
+        "en-US": "Office coding: Other Anx Syn",
+        "it-IT": "Codifica d’ufficio: Other Anx Syn"
+      },
+      "expression": {
+        "op": "and",
+        "args": [
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q5a"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "f2"
+              }
+            ]
+          },
+          {
+            "op": "gte",
+            "left": {
+              "op": "aggregate",
+              "fn": "countWhere",
+              "of": "value",
+              "source": {
+                "kind": "items",
+                "itemIds": [
+                  "q5b",
+                  "q5c",
+                  "q5d",
+                  "q5e",
+                  "q5f",
+                  "q5g"
+                ]
+              },
+              "predicate": {
+                "op": "or",
+                "args": [
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q5b"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "f2"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q5c"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "f2"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q5d"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "f2"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q5e"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "f2"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q5f"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "f2"
+                      }
+                    ]
+                  },
+                  {
+                    "op": "in",
+                    "value": {
+                      "op": "itemValue",
+                      "itemId": "q5g"
+                    },
+                    "set": [
+                      {
+                        "op": "str",
+                        "value": "f2"
+                      }
+                    ]
+                  }
+                ]
+              }
+            },
+            "right": {
+              "op": "num",
+              "value": 3
+            }
+          }
+        ]
+      },
+      "resultType": "boolean",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": true
+    },
+    {
+      "id": "officeCodingBulNer",
+      "label": {
+        "en-US": "Office coding: Bul Ner",
+        "it-IT": "Codifica d’ufficio: Bul Ner"
+      },
+      "expression": {
+        "op": "and",
+        "args": [
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q6a"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "yes"
+              }
+            ]
+          },
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q6b"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "yes"
+              }
+            ]
+          },
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q6c"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "yes"
+              }
+            ]
+          },
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q8"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "yes"
+              }
+            ]
+          }
+        ]
+      },
+      "resultType": "boolean",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": true
+    },
+    {
+      "id": "officeCodingBinEatDis",
+      "label": {
+        "en-US": "Office coding: Bin Eat Dis. The printed rule also accepts #8 left blank; that case cannot be evaluated and yields no value.",
+        "it-IT": "Codifica d’ufficio: Bin Eat Dis. La regola stampata accetta anche #8 lasciata in bianco; quel caso non può essere valutato e non produce alcun valore."
+      },
+      "expression": {
+        "op": "and",
+        "args": [
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q6a"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "yes"
+              }
+            ]
+          },
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q6b"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "yes"
+              }
+            ]
+          },
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q6c"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "yes"
+              }
+            ]
+          },
+          {
+            "op": "in",
+            "value": {
+              "op": "itemValue",
+              "itemId": "q8"
+            },
+            "set": [
+              {
+                "op": "str",
+                "value": "no"
+              }
+            ]
+          }
+        ]
+      },
+      "resultType": "boolean",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": true
+    },
+    {
+      "id": "officeCodingAlcAbu",
+      "label": {
+        "en-US": "Office coding: Alc Abu",
+        "it-IT": "Codifica d’ufficio: Alc Abu"
+      },
+      "expression": {
+        "op": "gte",
+        "left": {
+          "op": "aggregate",
+          "fn": "countWhere",
+          "of": "value",
+          "source": {
+            "kind": "items",
+            "itemIds": [
+              "q10a",
+              "q10b",
+              "q10c",
+              "q10d",
+              "q10e"
+            ]
+          },
+          "predicate": {
+            "op": "or",
+            "args": [
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q10a"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "yes"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q10b"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "yes"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q10c"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "yes"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q10d"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "yes"
+                  }
+                ]
+              },
+              {
+                "op": "in",
+                "value": {
+                  "op": "itemValue",
+                  "itemId": "q10e"
+                },
+                "set": [
+                  {
+                    "op": "str",
+                    "value": "yes"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "right": {
+          "op": "num",
+          "value": 1
+        }
+      },
+      "resultType": "boolean",
+      "scope": {
+        "kind": "assessment"
+      },
+      "emit": true
+    }
+  ],
+  "rules": [
+    {
+      "id": "skipFrom3a",
+      "order": 0,
+      "when": {
+        "op": "eq",
+        "left": {
+          "op": "itemValue",
+          "itemId": "q3a"
+        },
+        "right": {
+          "op": "str",
+          "value": "no"
+        }
+      },
+      "effect": {
+        "kind": "hide",
+        "targets": [
+          {
+            "kind": "item",
+            "itemId": "q3b"
+          },
+          {
+            "kind": "item",
+            "itemId": "q3c"
+          },
+          {
+            "kind": "item",
+            "itemId": "q3d"
+          },
+          {
+            "kind": "group",
+            "groupId": "section4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skipFrom5a",
+      "order": 1,
+      "when": {
+        "op": "eq",
+        "left": {
+          "op": "itemValue",
+          "itemId": "q5a"
+        },
+        "right": {
+          "op": "str",
+          "value": "f0"
+        }
+      },
+      "effect": {
+        "kind": "hide",
+        "targets": [
+          {
+            "kind": "item",
+            "itemId": "q5b"
+          },
+          {
+            "kind": "item",
+            "itemId": "q5c"
+          },
+          {
+            "kind": "item",
+            "itemId": "q5d"
+          },
+          {
+            "kind": "item",
+            "itemId": "q5e"
+          },
+          {
+            "kind": "item",
+            "itemId": "q5f"
+          },
+          {
+            "kind": "item",
+            "itemId": "q5g"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skipFrom6aOr6b",
+      "order": 2,
+      "when": {
+        "op": "or",
+        "args": [
+          {
+            "op": "eq",
+            "left": {
+              "op": "itemValue",
+              "itemId": "q6a"
+            },
+            "right": {
+              "op": "str",
+              "value": "no"
+            }
+          },
+          {
+            "op": "eq",
+            "left": {
+              "op": "itemValue",
+              "itemId": "q6b"
+            },
+            "right": {
+              "op": "str",
+              "value": "no"
+            }
+          }
+        ]
+      },
+      "effect": {
+        "kind": "hide",
+        "targets": [
+          {
+            "kind": "item",
+            "itemId": "q6c"
+          },
+          {
+            "kind": "group",
+            "groupId": "section7"
+          },
+          {
+            "kind": "group",
+            "groupId": "section8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "skipFrom9",
+      "order": 3,
+      "when": {
+        "op": "eq",
+        "left": {
+          "op": "itemValue",
+          "itemId": "q9"
+        },
+        "right": {
+          "op": "str",
+          "value": "no"
+        }
+      },
+      "effect": {
+        "kind": "hide",
+        "targets": [
+          {
+            "kind": "group",
+            "groupId": "section10"
+          }
+        ]
+      }
+    }
+  ],
+  "identicalByDesign": [
+    {
+      "slot": "/optionSets/3/options/0/label",
+      "languages": [
+        "en-US",
+        "it-IT"
+      ],
+      "reason": "Both forms print NO as the negative column heading; the word is the same in both languages."
+    }
+  ],
+  "provenance": {
+    "languages": {
+      "en-US": {
+        "sourced": true,
+        "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ), English",
+        "publisher": "No publisher is named; the document states: Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc.",
+        "retrievedFrom": "Not recorded when the document was placed; the committed file is the reference: truvex-content commit 0c54df3, phq/sources/PHQ_English_0.pdf",
+        "retrievedAt": "2026-10-07",
+        "digest": "sha256:927f81929273db3f360c9177c6f68e6dd510ccf928f73bca4d3f431c2a4f7b0d",
+        "transcribedBy": {
+          "role": "language model, transcribed from PDF without human review",
+          "id": "claude-opus-5-5",
+          "method": "textLayerAndImage"
+        },
+        "verifiedBy": {
+          "verified": false,
+          "note": "Nobody has verified this transcription. Demonstration content only: delivery content needs a real transcriber and a real verifier."
+        },
+        "notes": "Three pages. Item text, headings, option labels, the opening paragraph and the footer transcribed from the text layer and checked against the page image. Where the two disagree the image is followed: #3a, #3c and #7c read “––” in the text layer and print one em dash, carried as U+2014. Not carried, by decision: the Name/Age/Sex/Date line, the skip instructions (implemented as rules), page numbers, and underlining. Item numbers and locations are not recordable per item in this schema; see DECISIONS.md."
+      },
+      "it-IT": {
+        "sourced": true,
+        "document": "QUESTIONARIO SULLA SALUTE DEL/DELLA PAZIENTE (PHQ), Italian for Italy",
+        "publisher": "No publisher is named; the document states: Elaborato dai dottori Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke e colleghi, con un finanziamento da parte della Pfizer Inc.",
+        "retrievedFrom": "Not recorded when the document was placed; the committed file is the reference: truvex-content commit 0c54df3, phq/sources/PHQ_Italian for Italy.pdf",
+        "retrievedAt": "2026-10-07",
+        "digest": "sha256:8791619fa3f0bba225d0652475f13c7cabfab53eaecb0f04ead661825d369d3f",
+        "transcribedBy": {
+          "role": "language model, transcribed from PDF without human review",
+          "id": "claude-opus-5-5",
+          "method": "textLayerAndImage"
+        },
+        "verifiedBy": {
+          "verified": false,
+          "note": "Nobody has verified this transcription. Demonstration content only: delivery content needs a real transcriber and a real verifier."
+        },
+        "notes": "Transcribed from this Italian document, not from the English one. Where text layer and image disagree the image is followed: the text layer reads U+201F for most apostrophes the page prints as U+2019 (for example d’ansia, nell’altro, l’effetto), and “––” at #7c where one em dash is printed; the printed characters are carried. #5d is carried without the comma the English has, as printed. The office-coding lines on this form are printed in English and are not instrument text. Not carried: Nome/Età/Sesso/Data line, skip instructions, page numbers."
+      }
+    },
+    "scoring": [
+      {
+        "target": "officeCodingSomDisSymptomCriterion",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ), English",
+          "locus": "Page 1, FOR OFFICE CODING, first line",
+          "digest": "sha256:927f81929273db3f360c9177c6f68e6dd510ccf928f73bca4d3f431c2a4f7b0d"
+        },
+        "attributedTo": "No citation is printed for the office-coding rules. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entries, from PDF, without human review. Only the symptom count is authored; the biological-explanation criterion needs clinician input and is withheld. Named as a criterion, not the disorder. The Italian form prints the same line, in English, at the same place."
+      },
+      {
+        "target": "depressiveItemsAtThreshold",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ), English",
+          "locus": "Page 1, FOR OFFICE CODING, second and third lines",
+          "digest": "sha256:927f81929273db3f360c9177c6f68e6dd510ccf928f73bca4d3f431c2a4f7b0d"
+        },
+        "attributedTo": "No citation is printed for the office-coding rules. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entries, from PDF, without human review. The count shared by Maj Dep Syn and Other Dep Syn, authored once. #2i is counted at Several days or above (“if present at all”); the others at More than half the days or above. The Italian form prints the same line, in English, at the same place."
+      },
+      {
+        "target": "officeCodingMajDepSyn",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ), English",
+          "locus": "Page 1, FOR OFFICE CODING, second line",
+          "digest": "sha256:927f81929273db3f360c9177c6f68e6dd510ccf928f73bca4d3f431c2a4f7b0d"
+        },
+        "attributedTo": "No citation is printed for the office-coding rules. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entries, from PDF, without human review. Read as: #2a or #2b at least More than half the days, and five or more of #2a-i meeting their threshold. The Italian form prints the same line, in English, at the same place."
+      },
+      {
+        "target": "officeCodingOtherDepSyn",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ), English",
+          "locus": "Page 1, FOR OFFICE CODING, third line",
+          "digest": "sha256:927f81929273db3f360c9177c6f68e6dd510ccf928f73bca4d3f431c2a4f7b0d"
+        },
+        "attributedTo": "No citation is printed for the office-coding rules. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entries, from PDF, without human review. “#2a or b” carries no threshold of its own on this line; read with the second line's threshold, at least More than half the days. That reading is an interpretation. The Italian form prints the same line, in English, at the same place."
+      },
+      {
+        "target": "officeCodingPanSyn",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ), English",
+          "locus": "Page 2, FOR OFFICE CODING, first sentence",
+          "digest": "sha256:927f81929273db3f360c9177c6f68e6dd510ccf928f73bca4d3f431c2a4f7b0d"
+        },
+        "attributedTo": "No citation is printed for the office-coding rules. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entries, from PDF, without human review. The Italian form prints the same line, in English, at the same place."
+      },
+      {
+        "target": "officeCodingOtherAnxSyn",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ), English",
+          "locus": "Page 2, FOR OFFICE CODING, second sentence",
+          "digest": "sha256:927f81929273db3f360c9177c6f68e6dd510ccf928f73bca4d3f431c2a4f7b0d"
+        },
+        "attributedTo": "No citation is printed for the office-coding rules. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entries, from PDF, without human review. “if #5a and answers to three or more of #5b-g are More than half the days” is read as #5a also at More than half the days, the top option of #5. That reading is an interpretation. The Italian form prints the same line, in English, at the same place."
+      },
+      {
+        "target": "officeCodingBulNer",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ), English",
+          "locus": "Page 3, FOR OFFICE CODING, first line, first clause",
+          "digest": "sha256:927f81929273db3f360c9177c6f68e6dd510ccf928f73bca4d3f431c2a4f7b0d"
+        },
+        "attributedTo": "No citation is printed for the office-coding rules. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entries, from PDF, without human review. The Italian form prints the same line, in English, at the same place."
+      },
+      {
+        "target": "officeCodingBinEatDis",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ), English",
+          "locus": "Page 3, FOR OFFICE CODING, first line, second clause",
+          "digest": "sha256:927f81929273db3f360c9177c6f68e6dd510ccf928f73bca4d3f431c2a4f7b0d"
+        },
+        "attributedTo": "No citation is printed for the office-coding rules. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entries, from PDF, without human review. Printed: #8 either NO or left blank. Only NO is expressible; a score may not test for a blank (absence_operator_in_score). With #8 visible and blank the score has no value. Not authored around; see DECISIONS.md. The Italian form prints the same line, in English, at the same place."
+      },
+      {
+        "target": "officeCodingAlcAbu",
+        "transcribedFrom": {
+          "document": "PATIENT HEALTH QUESTIONNAIRE (PHQ), English",
+          "locus": "Page 3, FOR OFFICE CODING, second line",
+          "digest": "sha256:927f81929273db3f360c9177c6f68e6dd510ccf928f73bca4d3f431c2a4f7b0d"
+        },
+        "attributedTo": "No citation is printed for the office-coding rules. The form's footer attributes the questionnaire to Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues.",
+        "attributionConsulted": false,
+        "notes": "Transcriber not recordable in this slot: the same language model as the language entries, from PDF, without human review. “any of #10a-e is YES” authored as a count of at least 1, so that #10 skipped after #9 NO counts as none rather than as no value. The Italian form prints the same line, in English, at the same place."
+      }
+    ]
+  }
+}
