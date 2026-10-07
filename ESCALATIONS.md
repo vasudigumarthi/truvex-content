@@ -154,33 +154,66 @@ follows from two settled positions applied together:
 
 **The rule to carry: an aggregate with zero contributing members never returns a
 value, whatever emptied it** — a declared gate, skip rules, or anything else.
-It is withheld, with a reason.
+It is withheld, with a reason. **One refinement, for counts only:** a count
+emptied by an *answered* input returns 0. See "Counts and sums are not the same
+case" below.
 
 **This does not conflict with D1's other half.** A *partially* excluded section
 withholds only when the author declares it a gate. Branching that skips some
 members leaves the score valid. **That decision stands.** The broader rule
 covers only the case where *no* member contributes.
 
-**Not yet settled: do counts fall under it?** Derived by reading the PHQ source,
-not measured. Under the rule as stated, `count` and `countWhere` with zero
-contributing members would also return no value. In the PHQ that changes one
-algorithm:
+### Counts and sums are not the same case: decided 2026-10-07 (Vasu)
 
-- **Alc Abu** is a count of #10a-e YES, at least 1. After #9 NO, every member is
-  withdrawn. Today the count is 0 and the result `false`, which is the paper's
-  answer. Under the broad rule it would have no value for every non-drinker.
-- **Pan Syn and Other Anx Syn** are unaffected. Their counts can also be emptied
-  by a skip, but each sits in an `and` beside the gating item, and that item's
-  definite `false` still decides.
+**A capsule rule, implemented in the engine. Content cannot express it.**
+Nothing in the authoring source or the expression grammar can distinguish why a
+set is empty, and no authoring declaration is to be added for it.
 
-**Questions for the capsule thread:**
+- **A sum over zero members always withholds.** A sum asserts a magnitude, and
+  with no values there is no magnitude. Returning 0 states something nobody
+  produced.
+- **A count over zero members returns 0 only when the exclusion traces back to an
+  answered input.** Otherwise it withholds. "0 of 13 symptoms" is a claim about
+  the respondent, and with no answered cause nobody made it.
+- **The test is derived, not declared.** The engine knows which rule excluded the
+  members and whether that rule's own condition read answered inputs.
+- **The result records which case it was**, so a reader can tell a count of zero
+  that means *none* from one that means *nothing was asked*. This is a record
+  field, in the same territory as escalation 1's count of unanswered members.
 
-- Is "zero members, no value" right for counts as well as for totals?
-- Should a count emptied by logic say so through the same reason, so content
-  like Alc Abu can rely on it?
+**Evidence: Alc Abu.** It is a count of #10a-e YES, at least 1. Measured at
+capsule `babc9b6` on the generated `en-US` definition:
 
-**This is the same territory as escalation 1**, which already asks counts to
-treat absence differently from sums.
+```
+#9 NO:               #10 visible 0/5   AlcAbu=false  absentInputs=[]
+#9 YES, #10a-e NO:   #10 visible 5/5   AlcAbu=false  absentInputs=[]
+#9 blank, #10 blank: #10 visible 5/5   AlcAbu=null   absentInputs=[q10a..q10e]
+```
+
+**#9 NO** is the case the rule is for. The respondent answered #9, that answer
+is what emptied #10, and the empty set means "does not drink". The count is 0
+and Alc Abu is `false`, which is the paper's answer and the clinically right
+one. **Today's engine already gives it. The rule keeps it while withholding
+every other empty count.**
+
+**A section never administered** has no answered cause, so its count withholds.
+
+**A blank gating item does not empty the set in this engine**, and the rule
+needs to say what that case is. Measured above: a skip rule whose condition is
+unanswered does not fire. #10 stays visible, its members are blank, and the
+result is escalation 1's path, not this one.
+
+- **Today:** no value, with the five members as absent inputs.
+- **Under escalation 1 as written:** a count of 0, with 5 unanswered reported.
+
+**The intent stated above is that a blank gate withholds. Escalation 1's "blank
+does not match", applied to members visible only because their gate was blank,
+would give 0 instead.** The capsule thread should settle the interaction in one
+place: does a count whose members are visible only because their gate is
+unanswered withhold, or count them as not matching?
+
+**Pan Syn and Other Anx Syn are unaffected either way.** The gating item's
+definite `false` already decides them.
 
 **Content is not affected today.** The PHQ-SADS source does not author the
 literal skip, as a recorded deviation (`phq-sads/DECISIONS.md`). **Any
