@@ -30,7 +30,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "A"
     },
     {
       "id": "sectionB",
@@ -42,7 +44,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "B"
     },
     {
       "id": "sectionC",
@@ -54,7 +58,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "C"
     },
     {
       "id": "sectionD",
@@ -66,7 +72,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "D"
     },
     {
       "id": "sectionE",
@@ -78,7 +86,8 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "number": "E"
     }
   ],
   "items": [
@@ -97,6 +106,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 0,
+      "number": "1",
       "prompt": {
         "en-US": "Stomach pain"
       },
@@ -108,6 +118,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 1,
+      "number": "2",
       "prompt": {
         "en-US": "Back pain"
       },
@@ -119,6 +130,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 2,
+      "number": "3",
       "prompt": {
         "en-US": "Pain in your arms, legs, or joints (knees, hips, etc.)"
       },
@@ -130,6 +142,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 3,
+      "number": "4",
       "prompt": {
         "en-US": "Feeling tired or having little energy"
       },
@@ -141,6 +154,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 4,
+      "number": "5",
       "prompt": {
         "en-US": "Trouble falling or staying asleep, or sleeping too much"
       },
@@ -152,6 +166,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 5,
+      "number": "6",
       "prompt": {
         "en-US": "Menstrual cramps or other problems with your periods"
       },
@@ -163,6 +178,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 6,
+      "number": "7",
       "prompt": {
         "en-US": "Pain or problems during sexual intercourse"
       },
@@ -174,6 +190,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 7,
+      "number": "8",
       "prompt": {
         "en-US": "Headaches"
       },
@@ -185,6 +202,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 8,
+      "number": "9",
       "prompt": {
         "en-US": "Chest pain"
       },
@@ -196,6 +214,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 9,
+      "number": "10",
       "prompt": {
         "en-US": "Dizziness"
       },
@@ -207,6 +226,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 10,
+      "number": "11",
       "prompt": {
         "en-US": "Fainting spells"
       },
@@ -218,6 +238,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 11,
+      "number": "12",
       "prompt": {
         "en-US": "Feeling your heart pound or race"
       },
@@ -229,6 +250,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 12,
+      "number": "13",
       "prompt": {
         "en-US": "Shortness of breath"
       },
@@ -240,6 +262,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 13,
+      "number": "14",
       "prompt": {
         "en-US": "Constipation, loose bowels, or diarrhea"
       },
@@ -251,6 +274,7 @@
       "type": "choice",
       "parentGroupId": "sectionA",
       "order": 14,
+      "number": "15",
       "prompt": {
         "en-US": "Nausea, gas, or indigestion"
       },
@@ -262,6 +286,7 @@
       "type": "choice",
       "parentGroupId": "sectionB",
       "order": 0,
+      "number": "1",
       "prompt": {
         "en-US": "Feeling nervous anxiety or on edge"
       },
@@ -273,6 +298,7 @@
       "type": "choice",
       "parentGroupId": "sectionB",
       "order": 1,
+      "number": "2",
       "prompt": {
         "en-US": "Not being able to stop or control worrying"
       },
@@ -284,6 +310,7 @@
       "type": "choice",
       "parentGroupId": "sectionB",
       "order": 2,
+      "number": "3",
       "prompt": {
         "en-US": "Worrying too much about different things"
       },
@@ -295,6 +322,7 @@
       "type": "choice",
       "parentGroupId": "sectionB",
       "order": 3,
+      "number": "4",
       "prompt": {
         "en-US": "Trouble relaxing"
       },
@@ -306,6 +334,7 @@
       "type": "choice",
       "parentGroupId": "sectionB",
       "order": 4,
+      "number": "5",
       "prompt": {
         "en-US": "Being so restless that it is hard to sit still"
       },
@@ -317,6 +346,7 @@
       "type": "choice",
       "parentGroupId": "sectionB",
       "order": 5,
+      "number": "6",
       "prompt": {
         "en-US": "Becoming easily annoyed or irritable"
       },
@@ -328,6 +358,7 @@
       "type": "choice",
       "parentGroupId": "sectionB",
       "order": 6,
+      "number": "7",
       "prompt": {
         "en-US": "Feeling afraid as if something awful might happen"
       },
@@ -339,6 +370,7 @@
       "type": "choice",
       "parentGroupId": "sectionC",
       "order": 0,
+      "number": "a",
       "prompt": {
         "en-US": "In the last 4 weeks, have you had an anxiety attack — suddenly feeling fear or panic?"
       },
@@ -350,6 +382,7 @@
       "type": "choice",
       "parentGroupId": "sectionC",
       "order": 1,
+      "number": "b",
       "prompt": {
         "en-US": "Has this ever happened before?"
       },
@@ -361,6 +394,7 @@
       "type": "choice",
       "parentGroupId": "sectionC",
       "order": 2,
+      "number": "c",
       "prompt": {
         "en-US": "Do some of these attacks come suddenly out of the blue — that is, in situations where you don’t expect to be nervous or uncomfortable?"
       },
@@ -372,6 +406,7 @@
       "type": "choice",
       "parentGroupId": "sectionC",
       "order": 3,
+      "number": "d",
       "prompt": {
         "en-US": "Do these attacks bother you a lot or are you worried about having another attack?"
       },
@@ -383,6 +418,7 @@
       "type": "choice",
       "parentGroupId": "sectionC",
       "order": 4,
+      "number": "e",
       "prompt": {
         "en-US": "During your last bad anxiety attack, did you have symptoms like shortness of breath, sweating, or your heart racing, pounding or skipping?"
       },
@@ -394,6 +430,7 @@
       "type": "choice",
       "parentGroupId": "sectionD",
       "order": 0,
+      "number": "1",
       "prompt": {
         "en-US": "Little interest or pleasure in doing things"
       },
@@ -405,6 +442,7 @@
       "type": "choice",
       "parentGroupId": "sectionD",
       "order": 1,
+      "number": "2",
       "prompt": {
         "en-US": "Feeling down, depressed, or hopeless"
       },
@@ -416,6 +454,7 @@
       "type": "choice",
       "parentGroupId": "sectionD",
       "order": 2,
+      "number": "3",
       "prompt": {
         "en-US": "Trouble falling or staying asleep, or sleeping too much"
       },
@@ -427,6 +466,7 @@
       "type": "choice",
       "parentGroupId": "sectionD",
       "order": 3,
+      "number": "4",
       "prompt": {
         "en-US": "Feeling tired or having little energy"
       },
@@ -438,6 +478,7 @@
       "type": "choice",
       "parentGroupId": "sectionD",
       "order": 4,
+      "number": "5",
       "prompt": {
         "en-US": "Poor appetite or overeating"
       },
@@ -449,6 +490,7 @@
       "type": "choice",
       "parentGroupId": "sectionD",
       "order": 5,
+      "number": "6",
       "prompt": {
         "en-US": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down"
       },
@@ -460,6 +502,7 @@
       "type": "choice",
       "parentGroupId": "sectionD",
       "order": 6,
+      "number": "7",
       "prompt": {
         "en-US": "Trouble concentrating on things, such as reading the newspaper or watching television"
       },
@@ -471,6 +514,7 @@
       "type": "choice",
       "parentGroupId": "sectionD",
       "order": 7,
+      "number": "8",
       "prompt": {
         "en-US": "Moving or speaking so slowly that other people could have noticed? Or the opposite – being so fidgety or restless that you have been moving around a lot more than usual"
       },
@@ -482,6 +526,7 @@
       "type": "choice",
       "parentGroupId": "sectionD",
       "order": 8,
+      "number": "9",
       "prompt": {
         "en-US": "Thoughts that you would be beter off dead of or hurting yourself in some way"
       },
@@ -493,6 +538,7 @@
       "type": "choice",
       "parentGroupId": "sectionE",
       "order": 0,
+      "number": "E",
       "prompt": {
         "en-US": "If you checked off any problems on this questionnaire, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?"
       },

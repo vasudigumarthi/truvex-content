@@ -50,6 +50,27 @@ this source follows.
 every question to be answered, and this form, unlike the PHQ, prints no "unless
 you are requested to skip".
 
+## Printed layout and numbers
+
+**Recorded 2026-10-08, against the printed form.**
+
+- **Grids:** sections A, B, C and D are each printed as one grid and are
+  `layout: "matrix"`. E is a single question.
+- **Numbers as printed:** the section letter on each group, and on each item the
+  number the form prints beside it: `1` to `15` in A, `1` to `7` in B, `a` to `e`
+  in C, `1` to `9` in D. E carries `E` on the group and the item.
+- **Numbers repeat across sections** (`1` appears in A, B and D), which is
+  faithful to the form. **A printed number is not unique within an instrument and
+  is never an identifier**; the item's `id` is. Recorded as a property of the
+  content model on `number` in the capsule's canonical schema.
+
+**The skip instruction printed under C a is not carried, pending a decision.**
+The PHQ (2026-10-08) carries its printed skip instructions as help text. This one
+cannot follow without a decision, because its rule is deliberately not authored
+(the deviation above): help text reading *"go to question E"* would tell a
+respondent to skip section D while the page still requires it. Recorded here
+rather than authored or dropped silently.
+
 ## Scores
 
 | Score | Printed | Authored |

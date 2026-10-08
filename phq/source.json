@@ -35,7 +35,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "1"
     },
     {
       "id": "section2",
@@ -48,7 +50,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "2"
     },
     {
       "id": "section3",
@@ -61,7 +65,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "3"
     },
     {
       "id": "section4",
@@ -74,7 +80,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "4"
     },
     {
       "id": "section5",
@@ -87,7 +95,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "5"
     },
     {
       "id": "section6",
@@ -100,7 +110,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "6"
     },
     {
       "id": "section7",
@@ -113,7 +125,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "7"
     },
     {
       "id": "section8",
@@ -126,7 +140,8 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "number": "8"
     },
     {
       "id": "section9",
@@ -139,7 +154,8 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "number": "9"
     },
     {
       "id": "section10",
@@ -152,7 +168,9 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "layout": "matrix",
+      "number": "10"
     },
     {
       "id": "section11",
@@ -165,7 +183,8 @@
       "repetition": {
         "mode": "none",
         "ordering": "unordered"
-      }
+      },
+      "number": "11"
     }
   ],
   "items": [
@@ -185,6 +204,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 0,
+      "number": "1a",
       "prompt": {
         "en-US": "Stomach pain",
         "it-IT": "Mal di stomaco"
@@ -197,6 +217,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 1,
+      "number": "1b",
       "prompt": {
         "en-US": "Back pain",
         "it-IT": "Mal di schiena"
@@ -209,6 +230,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 2,
+      "number": "1c",
       "prompt": {
         "en-US": "Pain in your arms, legs, or joints (knees, hips, etc.)",
         "it-IT": "Dolore alle braccia, alle gambe o alle articolazioni (ginocchia, anche, ecc.)"
@@ -221,6 +243,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 3,
+      "number": "1d",
       "prompt": {
         "en-US": "Menstrual cramps or other problems with your periods",
         "it-IT": "Dolori mestruali o altri disturbi mestruali"
@@ -233,6 +256,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 4,
+      "number": "1e",
       "prompt": {
         "en-US": "Pain or problems during sexual intercourse",
         "it-IT": "Dolore o problemi durante i rapporti sessuali"
@@ -245,6 +269,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 5,
+      "number": "1f",
       "prompt": {
         "en-US": "Headaches",
         "it-IT": "Mal di testa"
@@ -257,6 +282,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 6,
+      "number": "1g",
       "prompt": {
         "en-US": "Chest pain",
         "it-IT": "Dolore al torace"
@@ -269,6 +295,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 7,
+      "number": "1h",
       "prompt": {
         "en-US": "Dizziness",
         "it-IT": "Giramenti di testa"
@@ -281,6 +308,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 8,
+      "number": "1i",
       "prompt": {
         "en-US": "Fainting spells",
         "it-IT": "Episodi di svenimento"
@@ -293,6 +321,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 9,
+      "number": "1j",
       "prompt": {
         "en-US": "Feeling your heart pound or race",
         "it-IT": "Sentire il cuore battere forte o accelerato"
@@ -305,6 +334,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 10,
+      "number": "1k",
       "prompt": {
         "en-US": "Shortness of breath",
         "it-IT": "Fiato corto"
@@ -317,6 +347,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 11,
+      "number": "1l",
       "prompt": {
         "en-US": "Constipation, loose bowels, or diarrhea",
         "it-IT": "Stitichezza, feci molli o inconsistenti o diarrea"
@@ -329,6 +360,7 @@
       "type": "choice",
       "parentGroupId": "section1",
       "order": 12,
+      "number": "1m",
       "prompt": {
         "en-US": "Nausea, gas, or indigestion",
         "it-IT": "Nausea, aria nella pancia o nello stomaco o indigestione"
@@ -341,6 +373,7 @@
       "type": "choice",
       "parentGroupId": "section2",
       "order": 0,
+      "number": "2a",
       "prompt": {
         "en-US": "Little interest or pleasure in doing things",
         "it-IT": "Scarso interesse o piacere nel fare le cose"
@@ -353,6 +386,7 @@
       "type": "choice",
       "parentGroupId": "section2",
       "order": 1,
+      "number": "2b",
       "prompt": {
         "en-US": "Feeling down, depressed, or hopeless",
         "it-IT": "Sentirsi giù, triste o disperato/a"
@@ -365,6 +399,7 @@
       "type": "choice",
       "parentGroupId": "section2",
       "order": 2,
+      "number": "2c",
       "prompt": {
         "en-US": "Trouble falling or staying asleep, or sleeping too much",
         "it-IT": "Problemi ad addormentarsi o a dormire tutta la notte senza svegliarsi, o a dormire troppo"
@@ -377,6 +412,7 @@
       "type": "choice",
       "parentGroupId": "section2",
       "order": 3,
+      "number": "2d",
       "prompt": {
         "en-US": "Feeling tired or having little energy",
         "it-IT": "Sentirsi stanco/a o avere poca energia"
@@ -389,6 +425,7 @@
       "type": "choice",
       "parentGroupId": "section2",
       "order": 4,
+      "number": "2e",
       "prompt": {
         "en-US": "Poor appetite or overeating",
         "it-IT": "Scarso appetito o mangiare troppo"
@@ -401,6 +438,7 @@
       "type": "choice",
       "parentGroupId": "section2",
       "order": 5,
+      "number": "2f",
       "prompt": {
         "en-US": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down",
         "it-IT": "Avere una scarsa opinione di sé, o sentirsi un/una fallito/a o aver deluso se stesso/a o i propri familiari"
@@ -413,6 +451,7 @@
       "type": "choice",
       "parentGroupId": "section2",
       "order": 6,
+      "number": "2g",
       "prompt": {
         "en-US": "Trouble concentrating on things, such as reading the newspaper or watching television",
         "it-IT": "Difficoltà a concentrarsi su qualcosa, per esempio leggere il giornale o guardare la televisione"
@@ -425,6 +464,7 @@
       "type": "choice",
       "parentGroupId": "section2",
       "order": 7,
+      "number": "2h",
       "prompt": {
         "en-US": "Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual",
         "it-IT": "Muoversi o parlare così lentamente da poter essere notato/a da altre persone. O, al contrario, essere così irrequieto/a da muoversi molto più del solito"
@@ -437,6 +477,7 @@
       "type": "choice",
       "parentGroupId": "section2",
       "order": 8,
+      "number": "2i",
       "prompt": {
         "en-US": "Thoughts that you would be better off dead or of hurting yourself in some way",
         "it-IT": "Pensare che sarebbe meglio morire o farsi del male in un modo o nell’altro"
@@ -449,9 +490,14 @@
       "type": "choice",
       "parentGroupId": "section3",
       "order": 0,
+      "number": "3a",
       "prompt": {
         "en-US": "In the last 4 weeks, have you had an anxiety attack — suddenly feeling fear or panic?",
         "it-IT": "Nelle ultime 4 settimane, ha avuto un attacco d’ansia, provando all’improvviso un senso di paura o di panico?"
+      },
+      "helpText": {
+        "en-US": "If you checked “NO”, go to question #5.",
+        "it-IT": "Se ha risposto “NO”, passi alla domanda n° 5."
       },
       "required": true,
       "optionSetId": "noYes"
@@ -461,6 +507,7 @@
       "type": "choice",
       "parentGroupId": "section3",
       "order": 1,
+      "number": "3b",
       "prompt": {
         "en-US": "Has this ever happened before?",
         "it-IT": "Le è mai capitato prima?"
@@ -473,6 +520,7 @@
       "type": "choice",
       "parentGroupId": "section3",
       "order": 2,
+      "number": "3c",
       "prompt": {
         "en-US": "Do some of these attacks come suddenly out of the blue — that is, in situations where you don’t expect to be nervous or uncomfortable?",
         "it-IT": "Alcuni di questi attacchi le capitano all’improvviso, cioè in situazioni in cui non si aspetta di essere nervoso/a o a disagio?"
@@ -485,6 +533,7 @@
       "type": "choice",
       "parentGroupId": "section3",
       "order": 3,
+      "number": "3d",
       "prompt": {
         "en-US": "Do these attacks bother you a lot or are you worried about having another attack?",
         "it-IT": "Questi attacchi le danno molto fastidio o è preoccupato/a di avere un altro attacco?"
@@ -497,6 +546,7 @@
       "type": "choice",
       "parentGroupId": "section4",
       "order": 0,
+      "number": "4a",
       "prompt": {
         "en-US": "Were you short of breath?",
         "it-IT": "Ha avuto il fiato corto?"
@@ -509,6 +559,7 @@
       "type": "choice",
       "parentGroupId": "section4",
       "order": 1,
+      "number": "4b",
       "prompt": {
         "en-US": "Did your heart race, pound, or skip?",
         "it-IT": "Ha sentito il cuore battere forte, accelerato o perdere colpi?"
@@ -521,6 +572,7 @@
       "type": "choice",
       "parentGroupId": "section4",
       "order": 2,
+      "number": "4c",
       "prompt": {
         "en-US": "Did you have chest pain or pressure?",
         "it-IT": "Ha avuto male o senso di peso al torace?"
@@ -533,6 +585,7 @@
       "type": "choice",
       "parentGroupId": "section4",
       "order": 3,
+      "number": "4d",
       "prompt": {
         "en-US": "Did you sweat?",
         "it-IT": "Ha sudato?"
@@ -545,6 +598,7 @@
       "type": "choice",
       "parentGroupId": "section4",
       "order": 4,
+      "number": "4e",
       "prompt": {
         "en-US": "Did you feel as if you were choking?",
         "it-IT": "Le è sembrato di soffocare?"
@@ -557,6 +611,7 @@
       "type": "choice",
       "parentGroupId": "section4",
       "order": 5,
+      "number": "4f",
       "prompt": {
         "en-US": "Did you have hot flashes or chills?",
         "it-IT": "Ha avuto vampate di calore o brividi di freddo?"
@@ -569,6 +624,7 @@
       "type": "choice",
       "parentGroupId": "section4",
       "order": 6,
+      "number": "4g",
       "prompt": {
         "en-US": "Did you have nausea or an upset stomach, or the feeling that you were going to have diarrhea?",
         "it-IT": "Ha avuto nausea o lo stomaco sottosopra, o la sensazione che le stesse venendo la diarrea?"
@@ -581,6 +637,7 @@
       "type": "choice",
       "parentGroupId": "section4",
       "order": 7,
+      "number": "4h",
       "prompt": {
         "en-US": "Did you feel dizzy, unsteady, or faint?",
         "it-IT": "Si è sentito/a girare la testa, perdere l’equilibrio o sul punto di svenire?"
@@ -593,6 +650,7 @@
       "type": "choice",
       "parentGroupId": "section4",
       "order": 8,
+      "number": "4i",
       "prompt": {
         "en-US": "Did you have tingling or numbness in parts of your body?...",
         "it-IT": "Ha avuto formicolii o intorpidimento in qualche parte del corpo?..."
@@ -605,6 +663,7 @@
       "type": "choice",
       "parentGroupId": "section4",
       "order": 9,
+      "number": "4j",
       "prompt": {
         "en-US": "Did you tremble or shake?",
         "it-IT": "Ha avuto tremori?"
@@ -617,6 +676,7 @@
       "type": "choice",
       "parentGroupId": "section4",
       "order": 10,
+      "number": "4k",
       "prompt": {
         "en-US": "Were you afraid you were dying?",
         "it-IT": "Ha avuto paura di morire?"
@@ -629,9 +689,14 @@
       "type": "choice",
       "parentGroupId": "section5",
       "order": 0,
+      "number": "5a",
       "prompt": {
         "en-US": "Feeling nervous, anxious, on edge, or worrying a lot about different things.",
         "it-IT": "Sentirsi nervoso/a, ansioso/a, teso/a, o molto preoccupato/a per vari motivi."
+      },
+      "helpText": {
+        "en-US": "If you checked “Not at all”, go to question #6.",
+        "it-IT": "Se ha risposto “Mai”, passi alla domanda n° 6."
       },
       "required": true,
       "optionSetId": "frequencyThreePoint"
@@ -641,6 +706,7 @@
       "type": "choice",
       "parentGroupId": "section5",
       "order": 1,
+      "number": "5b",
       "prompt": {
         "en-US": "Feeling restless so that it is hard to sit still.",
         "it-IT": "Sentirsi talmente irrequieto/a da non riuscire a stare seduto/a fermo/a."
@@ -653,6 +719,7 @@
       "type": "choice",
       "parentGroupId": "section5",
       "order": 2,
+      "number": "5c",
       "prompt": {
         "en-US": "Getting tired very easily.",
         "it-IT": "Stancarsi molto facilmente."
@@ -665,6 +732,7 @@
       "type": "choice",
       "parentGroupId": "section5",
       "order": 3,
+      "number": "5d",
       "prompt": {
         "en-US": "Muscle tension, aches, or soreness.",
         "it-IT": "Tensione muscolare dolori o indolenzimento."
@@ -677,6 +745,7 @@
       "type": "choice",
       "parentGroupId": "section5",
       "order": 4,
+      "number": "5e",
       "prompt": {
         "en-US": "Trouble falling asleep or staying asleep.",
         "it-IT": "Problemi ad addormentarsi o a dormire tutta la notte senza svegliarsi."
@@ -689,6 +758,7 @@
       "type": "choice",
       "parentGroupId": "section5",
       "order": 5,
+      "number": "5f",
       "prompt": {
         "en-US": "Trouble concentrating on things, such as reading a book or watching TV.",
         "it-IT": "Difficoltà a concentrarsi su qualcosa, per esempio leggere un libro o guardare la televisione."
@@ -701,6 +771,7 @@
       "type": "choice",
       "parentGroupId": "section5",
       "order": 6,
+      "number": "5g",
       "prompt": {
         "en-US": "Becoming easily annoyed or irritable.",
         "it-IT": "Infastidirsi o irritarsi facilmente."
@@ -713,6 +784,7 @@
       "type": "choice",
       "parentGroupId": "section6",
       "order": 0,
+      "number": "6a",
       "prompt": {
         "en-US": "Do you often feel that you can’t control what or how much you eat?",
         "it-IT": "Ha spesso la sensazione di non riuscire a controllare cosa o quanto mangia?"
@@ -725,9 +797,14 @@
       "type": "choice",
       "parentGroupId": "section6",
       "order": 1,
+      "number": "6b",
       "prompt": {
         "en-US": "Do you often eat, within any 2-hour period, what most people would regard as an unusually large amount of food?",
         "it-IT": "Le è capitato spesso, nell’arco di 2 ore, di mangiare ciò che la maggior parte delle persone considererebbe come una quantità di cibo insolitamente grande?"
+      },
+      "helpText": {
+        "en-US": "If you checked “NO” to either #a or #b, go to question #9.",
+        "it-IT": "Se ha risposto “NO” alla domanda a oppure alla b, vada alla domanda n° 9."
       },
       "required": true,
       "optionSetId": "noYes"
@@ -737,6 +814,7 @@
       "type": "choice",
       "parentGroupId": "section6",
       "order": 2,
+      "number": "6c",
       "prompt": {
         "en-US": "Has this been as often, on average, as twice a week for the last 3 months?",
         "it-IT": "Le è capitato, in media, due volte alla settimana negli ultimi 3 mesi?"
@@ -749,6 +827,7 @@
       "type": "choice",
       "parentGroupId": "section7",
       "order": 0,
+      "number": "7a",
       "prompt": {
         "en-US": "Made yourself vomit?",
         "it-IT": "Provocarsi il vomito?"
@@ -761,6 +840,7 @@
       "type": "choice",
       "parentGroupId": "section7",
       "order": 1,
+      "number": "7b",
       "prompt": {
         "en-US": "Took more than twice the recommended dose of laxatives?",
         "it-IT": "Prendere più del doppio della dose di lassativi consigliata?"
@@ -773,6 +853,7 @@
       "type": "choice",
       "parentGroupId": "section7",
       "order": 2,
+      "number": "7c",
       "prompt": {
         "en-US": "Fasted — not eaten anything at all for at least 24 hours?",
         "it-IT": "Digiunare — non mangiare assolutamente nulla per almeno 24 ore?"
@@ -785,6 +866,7 @@
       "type": "choice",
       "parentGroupId": "section7",
       "order": 3,
+      "number": "7d",
       "prompt": {
         "en-US": "Exercised for more than an hour specifically to avoid gaining weight after binge eating?",
         "it-IT": "Fare esercizio fisico per più di un’ora, proprio per evitare di aumentare di peso dopo essersi abbuffato/a?"
@@ -797,6 +879,7 @@
       "type": "choice",
       "parentGroupId": "section8",
       "order": 0,
+      "number": "8",
       "prompt": {
         "en-US": "If you checked “YES” to any of these ways of avoiding gaining weight, were any as often, on average, as twice a week?",
         "it-IT": "Se ha risposto “SÌ” a uno qualsiasi di questi modi per evitare di aumentare di peso, questo le è capitato in media due volte alla settimana?"
@@ -809,9 +892,14 @@
       "type": "choice",
       "parentGroupId": "section9",
       "order": 0,
+      "number": "9",
       "prompt": {
         "en-US": "Do you ever drink alcohol (including beer or wine)?",
         "it-IT": "Beve mai alcolici (compresi birra o vino)?"
+      },
+      "helpText": {
+        "en-US": "If you checked “NO” go to question #11.",
+        "it-IT": "Se ha risposto “NO”, passi alla domanda n° 11."
       },
       "required": true,
       "optionSetId": "noYes"
@@ -821,6 +909,7 @@
       "type": "choice",
       "parentGroupId": "section10",
       "order": 0,
+      "number": "10a",
       "prompt": {
         "en-US": "You drank alcohol even though a doctor suggested that you stop drinking because of a problem with your health.",
         "it-IT": "Ha bevuto alcolici nonostante il medico le avesse consigliato di smettere di bere a causa di un suo problema di salute."
@@ -833,6 +922,7 @@
       "type": "choice",
       "parentGroupId": "section10",
       "order": 1,
+      "number": "10b",
       "prompt": {
         "en-US": "You drank alcohol, were high from alcohol, or hung over while you were working, going to school, or taking care of children or other responsibilities.",
         "it-IT": "Ha bevuto alcolici, era leggermente ubriaco/a, o era ancora sotto l’effetto dell’alcol mentre lavorava, andava a scuola, si prendeva cura di bambini o aveva altre responsabilità."
@@ -845,6 +935,7 @@
       "type": "choice",
       "parentGroupId": "section10",
       "order": 2,
+      "number": "10c",
       "prompt": {
         "en-US": "You missed or were late for work, school, or other activities because you were drinking or hung over.",
         "it-IT": "È mancato/a o è arrivato/a tardi al lavoro, a scuola o altro perché aveva bevuto o era ancora sotto l’effetto dell’alcol."
@@ -857,6 +948,7 @@
       "type": "choice",
       "parentGroupId": "section10",
       "order": 3,
+      "number": "10d",
       "prompt": {
         "en-US": "You had a problem getting along with other people while you were drinking.",
         "it-IT": "Ha avuto problemi nei rapporti con gli altri a causa dell’alcol."
@@ -869,6 +961,7 @@
       "type": "choice",
       "parentGroupId": "section10",
       "order": 4,
+      "number": "10e",
       "prompt": {
         "en-US": "You drove a car after having several drinks or after drinking too much.",
         "it-IT": "Ha guidato l’auto dopo aver bevuto parecchi bicchieri o dopo aver bevuto troppo."
@@ -881,6 +974,7 @@
       "type": "choice",
       "parentGroupId": "section11",
       "order": 0,
+      "number": "11",
       "prompt": {
         "en-US": "If you checked off any problems on this questionnaire, how difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
         "it-IT": "Se ha fatto una crocetta su un qualsiasi problema di questo questionario, quanto questi problemi le hanno reso difficile fare il suo lavoro, occuparsi delle sue cose a casa o avere buoni rapporti con gli altri?"
