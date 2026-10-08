@@ -338,6 +338,20 @@ capsule thread, not something content can soften.
 whose condition is unanswered does not fire, so no input produces that state.
 **Recorded here so it is not mistaken for an omission.**
 
+### A package generated before bd6bf5b lacks `depressiveItemsAtThreshold`: regenerate before signing
+
+**Recorded 2026-10-08.** `bd6bf5b` set `emit: true` on
+`depressiveItemsAtThreshold`, so the count now appears in every outcome. **A vector
+set's expected outcomes are generated from the source**, so a package generated
+from an earlier commit expects outcomes without that score, and an engine
+running the current source emits it. Such a package disagrees at the startup
+conformance run, which refuses it.
+
+**So no PHQ package (either language) generated before `bd6bf5b` may be signed.**
+Regenerate the definitions and the vector set from this source, at or after that
+commit, and sign what that produces. This is the same mechanism as the four
+cases above, from a different cause.
+
 ## Validation
 
 `check-source.mjs`: **VALID** at capsule `babc9b6`, run from a clean clone built
