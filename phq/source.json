@@ -1452,7 +1452,7 @@
       "scope": {
         "kind": "assessment"
       },
-      "emit": false
+      "emit": true
     },
     {
       "id": "officeCodingMajDepSyn",
