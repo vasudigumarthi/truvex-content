@@ -10,10 +10,18 @@ model, without human review, and nobody has verified it.
 
 ---
 
-## Deviation: the printed skip at C a is not authored
+## Deviation: the printed skip at C a, rule and wording, is not authored
 
-**Recorded 2026-10-07, decided by Vasu. This is a deviation from the printed
-form, and it is deliberate.**
+**Recorded 2026-10-07, decided by Vasu; widened 2026-10-08 to cover the printed
+wording as well as the rule. One deviation, one reason. It is deliberate.**
+
+**What is not authored:** the skip rule, and the instruction's printed text,
+which the PHQ (2026-10-08) carries as help text on the item governing each of its
+skips. **The reason is the same for both:** the form's instruction cannot be
+honoured safely, so neither the behaviour nor the words that promise it appear.
+Printed alone, the words would tell a respondent to go to E and then require
+them to answer D: a contradiction on screen, which is worse than printing
+nothing.
 
 **What the form prints.** Under C a: *"If you checked “NO”, go to question E."*
 Section D, which follows, is the PHQ-9. **Read literally, the instruction skips
@@ -44,7 +52,7 @@ from the printed form, so the question is which deviation is safe:
 
 **The resolution belongs to the instrument owner**, not to Truvex: either the
 form is corrected at its source, or the owner confirms the intended target and
-this source follows.
+this source follows — the rule and its wording together.
 
 **C b-e are required**, like the rest of the form. The opening paragraph asks for
 every question to be answered, and this form, unlike the PHQ, prints no "unless
@@ -64,12 +72,8 @@ you are requested to skip".
   is never an identifier**; the item's `id` is. Recorded as a property of the
   content model on `number` in the capsule's canonical schema.
 
-**The skip instruction printed under C a is not carried, pending a decision.**
-The PHQ (2026-10-08) carries its printed skip instructions as help text. This one
-cannot follow without a decision, because its rule is deliberately not authored
-(the deviation above): help text reading *"go to question E"* would tell a
-respondent to skip section D while the page still requires it. Recorded here
-rather than authored or dropped silently.
+**The skip instruction printed under C a is not carried**: it is part of
+[the deviation above](#deviation-the-printed-skip-at-c-a-rule-and-wording-is-not-authored).
 
 ## Scores
 
