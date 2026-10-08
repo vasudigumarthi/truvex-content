@@ -133,6 +133,43 @@ repository's rule", and it applies here unchanged.
 
 **Delivery content needs a real transcriber and a real verifier.**
 
+## Vector cases
+
+**Added 2026-10-07.** `vectorCases` carries 6 cases, run at every deployment's
+startup through the signed vector set.
+
+**Generated at capsule `babc9b6`:** every scoring path is covered, and none is
+unreachable.
+
+**Each case's name is the only text the format carries.** What each case proves
+is recorded here, generated from the same list.
+
+| Case | What it proves |
+|---|---|
+| baseline: every item answered | a complete form gives all three totals as plain sums of the printed column scores: 15, 7, 9 |
+| baseline: nothing answered | an empty form gives no value for every total; makes every summed item absent at least once |
+| deviation: C a NO, every D item Nearly every day | the C a skip is not authored: D stays shown and scored, PHQ-9 is 27; read literally (go to E) it would be 0 |
+| deviation: C a YES, every D item Nearly every day | the other side of C a: the same PHQ-9 of 27, so the C a answer has no effect on scoring |
+| A6 blank, every other item answered | a blank A6 withholds the PHQ-15 total and nothing else; a sum cannot bound a magnitude |
+| maximum on every scale | every item at its top printed score gives 30, 21 and 27 |
+
+### The C a deviation is demonstrated, but its literal reading cannot be
+
+**The two "deviation" cases demonstrate the deviation as authored.** With C a
+NO, section D stays shown and scored, giving a PHQ-9 of 27, the same as with C a
+YES.
+
+**The literal reading's result cannot be a vector on this definition.** That
+result is 0 with a basis that reads complete, measured on a scratch variant. A
+vector runs the definition it ships with, and this one carries no skip rule, so
+there is nothing for a vector to exercise. **The 0 is recorded only by
+measurement**, under "Deviation: the printed skip at C a is not authored" above.
+It could become a vector only if the instrument owner's resolution puts a rule
+into the definition.
+
+**No case here depends on escalation 1.** Sums are unchanged by it: the A6 case
+withholds today and under the rule.
+
 ## Validation
 
 `check-source.mjs`: **VALID** at capsule `babc9b6`, from a clean clone built in

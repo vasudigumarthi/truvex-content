@@ -773,5 +773,1324 @@
         "notes": "Transcriber not recordable in this slot: the same language model as the language entry, from PDF, without human review. The printed sum over the column subtotals, authored as one sum over D1-9. No severity bands are printed on this form and none are authored."
       }
     ]
-  }
+  },
+  "vectorCases": [
+    {
+      "name": "baseline: every item answered",
+      "inputs": [
+        {
+          "itemId": "a1",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a2",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a3",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a4",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a5",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a6",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a7",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a8",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a9",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a10",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a11",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a12",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a13",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a14",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a15",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "b1",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b2",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b3",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b4",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b5",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b6",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b7",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "cA",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "cB",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "cC",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "cD",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "cE",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "d1",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d2",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d3",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d4",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d5",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d6",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d7",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d8",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d9",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "e",
+          "value": {
+            "kind": "choice",
+            "code": "d1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "baseline: nothing answered",
+      "inputs": []
+    },
+    {
+      "name": "deviation: C a NO, every D item Nearly every day",
+      "inputs": [
+        {
+          "itemId": "a1",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a2",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a3",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a4",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a5",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a6",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a7",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a8",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a9",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a10",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a11",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a12",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a13",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a14",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a15",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "b1",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b2",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b3",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b4",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b5",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b6",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b7",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "cA",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "cB",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "cC",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "cD",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "cE",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "d1",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d2",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d3",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d4",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d5",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d6",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d7",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d8",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d9",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "e",
+          "value": {
+            "kind": "choice",
+            "code": "d1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "deviation: C a YES, every D item Nearly every day",
+      "inputs": [
+        {
+          "itemId": "a1",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a2",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a3",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a4",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a5",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a6",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a7",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a8",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a9",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a10",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a11",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a12",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a13",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a14",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a15",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "b1",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b2",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b3",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b4",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b5",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b6",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b7",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "cA",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "cB",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "cC",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "cD",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "cE",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "d1",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d2",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d3",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d4",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d5",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d6",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d7",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d8",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d9",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "e",
+          "value": {
+            "kind": "choice",
+            "code": "d1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "A6 blank, every other item answered",
+      "inputs": [
+        {
+          "itemId": "a1",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a2",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a3",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a4",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a5",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a7",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a8",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a9",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a10",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a11",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a12",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a13",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a14",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "a15",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "b1",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b2",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b3",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b4",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b5",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b6",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "b7",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "cA",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "cB",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "cC",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "cD",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "cE",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "d1",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d2",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d3",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d4",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d5",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d6",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d7",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d8",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "d9",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "e",
+          "value": {
+            "kind": "choice",
+            "code": "d1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "maximum on every scale",
+      "inputs": [
+        {
+          "itemId": "a1",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a2",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a3",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a4",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a5",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a6",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a7",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a8",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a9",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a10",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a11",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a12",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a13",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a14",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "a15",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "b1",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "b2",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "b3",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "b4",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "b5",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "b6",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "b7",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "cA",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "cB",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "cC",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "cD",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "cE",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "d1",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d2",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d3",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d4",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d5",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d6",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d7",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d8",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "d9",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "e",
+          "value": {
+            "kind": "choice",
+            "code": "d1"
+          }
+        }
+      ]
+    }
+  ]
 }

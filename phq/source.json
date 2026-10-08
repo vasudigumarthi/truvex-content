@@ -2527,5 +2527,7857 @@
         "notes": "Transcriber not recordable in this slot: the same language model as the language entries, from PDF, without human review. “any of #10a-e is YES” authored as a count of at least 1, so that #10 skipped after #9 NO counts as none rather than as no value. The Italian form prints the same line, in English, at the same place."
       }
     ]
-  }
+  },
+  "vectorCases": [
+    {
+      "name": "baseline: every item shown and answered",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3d",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4f",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4g",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4h",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4i",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4j",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4k",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5b",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5c",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5d",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5e",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5f",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5g",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q7a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q8",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q10a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q11",
+          "value": {
+            "kind": "choice",
+            "code": "d1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "baseline: every gate closed, every shown item answered negative",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "baseline: nothing answered",
+      "inputs": []
+    },
+    {
+      "name": "skip 3a: NO withdraws 3b-d and #4, every other gate open",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5b",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5c",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5d",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5e",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5f",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5g",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q7a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q8",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q10a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q11",
+          "value": {
+            "kind": "choice",
+            "code": "d1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 3a: YES, 3b-d YES, four of #4 YES",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q3b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3d",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4d",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4f",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4g",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4h",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4i",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4j",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4k",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 3a: YES, 3b-d YES, three of #4 YES",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q3b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3d",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4f",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4g",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4h",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4i",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4j",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4k",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 5a: Not at all withdraws 5b-g, every other gate open",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3d",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4f",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4g",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4h",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4i",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4j",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4k",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q7a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q8",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q10a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q11",
+          "value": {
+            "kind": "choice",
+            "code": "d1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 5a: More than half the days, three of 5b-g at that level",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5b",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q5c",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q5d",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q5e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q5f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q5g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 5a: Several days, 5b-g shown",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5b",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q5c",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q5d",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q5e",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q5f",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q5g",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 6: 6a NO withdraws 6c, #7 and #8, every other gate open",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3d",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4f",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4g",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4h",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4i",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4j",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4k",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5b",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5c",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5d",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5e",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5f",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5g",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q10a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q11",
+          "value": {
+            "kind": "choice",
+            "code": "d1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 6: 6b NO withdraws 6c, #7 and #8, every other gate open",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3d",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4f",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4g",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4h",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4i",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4j",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4k",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5b",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5c",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5d",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5e",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5f",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5g",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q10a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q11",
+          "value": {
+            "kind": "choice",
+            "code": "d1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 6: 6a-c YES, #7 NO, #8 YES",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q7a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q8",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 6: 6a-c YES, #7 NO, #8 NO",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q7a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q8",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 9: NO withdraws #10, every other gate open",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b1"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3d",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4f",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4g",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4h",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4i",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4j",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4k",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5b",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5c",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5d",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5e",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5f",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q5g",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q7a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q8",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q11",
+          "value": {
+            "kind": "choice",
+            "code": "d1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 9: YES, #10a-e all NO",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q10a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "skip 9: YES, 10c YES",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q10a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        }
+      ]
+    },
+    {
+      "name": "esc1: 9 blank, 10 shown and blank",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "esc1: 2e blank, 5 of 8 meet",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "esc1: 2e blank, 4 of 8 meet",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "esc1: 2e blank, 3 of 8 meet",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "esc1: 2e blank, none meet, 2a and 2b Not at all",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "esc1: 1d blank, three others a lot",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "esc1: 1d blank, two others a lot",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "esc1 not covered: 6a-c YES, #8 blank",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q7a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q7d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "depression: 5 of 9 meet, 2i at Several days",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f1"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "depression: 4 of 9 meet, 2i Not at all",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "depression: 2c-f meet, 2a and 2b below",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f3"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "somatic: three a lot",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "somatic: four a lot",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b2"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "depression: 6 of 9 meet",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "depression: exactly 2 meet, 2a and 2b",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f2"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "panic: 3a-d YES, five of #4 YES",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q3b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q3d",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4c",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4d",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4e",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q4f",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4g",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4h",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4i",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4j",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q4k",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    },
+    {
+      "name": "alcohol: 9 YES, two of #10 YES",
+      "inputs": [
+        {
+          "itemId": "q1a",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1b",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1c",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1d",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1e",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1f",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1g",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1h",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1i",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1j",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1k",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1l",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q1m",
+          "value": {
+            "kind": "choice",
+            "code": "b0"
+          }
+        },
+        {
+          "itemId": "q2a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2b",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2c",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2d",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2e",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2f",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2g",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2h",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q2i",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q3a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q5a",
+          "value": {
+            "kind": "choice",
+            "code": "f0"
+          }
+        },
+        {
+          "itemId": "q6a",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q6b",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q9",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q10a",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q10b",
+          "value": {
+            "kind": "choice",
+            "code": "yes"
+          }
+        },
+        {
+          "itemId": "q10c",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10d",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        },
+        {
+          "itemId": "q10e",
+          "value": {
+            "kind": "choice",
+            "code": "no"
+          }
+        }
+      ]
+    }
+  ]
 }

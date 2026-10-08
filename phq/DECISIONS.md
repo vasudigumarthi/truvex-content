@@ -251,6 +251,93 @@ tool.
 **Delivery content needs a real transcriber and a real verifier.** This source is
 for demonstration and platform testing only.
 
+## Vector cases
+
+**Added 2026-10-07.** `vectorCases` carries 33 cases. They travel with the
+content: the generator runs the engine over each one and writes the expected
+outcome into the package's vector set. The set is named by digest in the signed
+content manifest and run at every deployment's startup.
+
+**Generated at capsule `babc9b6`:**
+
+- every scoring path is covered, and none is recorded unreachable;
+- both language packages' expectations are identical;
+- a second run is byte-identical.
+
+**The comparison-in-predicate refusal (`vector_path_unmeasurable`) does not
+arise**, because every `countWhere` predicate here uses `in`, not a comparison.
+
+**Each case's name is the only text the format carries** (`name` and `inputs`;
+128 characters). What each case proves is therefore recorded here. This table
+is generated from the same list the cases are built from.
+
+| Case | What it proves |
+|---|---|
+| baseline: every item shown and answered | a complete form with every gate open evaluates every score to a definite value |
+| baseline: every gate closed, every shown item answered negative | a complete negative form with every skip taken gives false everywhere, not no value |
+| baseline: nothing answered | an empty form gives no value for every score; makes every aggregate member absent at least once |
+| skip 3a: NO withdraws 3b-d and #4, every other gate open | only the 3a gate closed: Pan Syn false from 3a alone, and the withdrawn items are not demanded |
+| skip 3a: YES, 3b-d YES, four of #4 YES | the other side of 3a: #4 is shown and Pan Syn is true at exactly four |
+| skip 3a: YES, 3b-d YES, three of #4 YES | Pan Syn just below its threshold of four is false |
+| skip 5a: Not at all withdraws 5b-g, every other gate open | only the 5a gate closed: Other Anx Syn false from 5a alone |
+| skip 5a: More than half the days, three of 5b-g at that level | the other side of 5a: Other Anx Syn true at exactly three |
+| skip 5a: Several days, 5b-g shown | 5a below its required level makes Other Anx Syn false although 5b-g are shown |
+| skip 6: 6a NO withdraws 6c, #7 and #8, every other gate open | the 6 gate closed by 6a alone: Bul Ner and Bin Eat Dis false |
+| skip 6: 6b NO withdraws 6c, #7 and #8, every other gate open | the 6 gate closed by 6b alone, the other arm of the or: Bul Ner and Bin Eat Dis false |
+| skip 6: 6a-c YES, #7 NO, #8 YES | the other side of the 6 skip: Bul Ner true, Bin Eat Dis false |
+| skip 6: 6a-c YES, #7 NO, #8 NO | Bin Eat Dis true on the half of its rule that is expressible |
+| skip 9: NO withdraws #10, every other gate open | only the 9 gate closed; escalation 1: #10 excluded by an answered input, Alc Abu false (min 0, max 0) |
+| skip 9: YES, #10a-e all NO | escalation 1: #10 shown and all NO; Alc Abu false (min 0, max 0) |
+| skip 9: YES, 10c YES | the other side of the 9 skip: Alc Abu true at exactly one |
+| esc1: 9 blank, 10 shown and blank | escalation 1: Alc Abu no value today and under the rule (min 0, max 5) |
+| esc1: 2e blank, 5 of 8 meet | escalation 1: no value today; under the rule Maj Dep true, Other Dep false (min 5, max 6) |
+| esc1: 2e blank, 4 of 8 meet | escalation 1: no value today and under the rule, because the blank decides it (min 4, max 5) |
+| esc1: 2e blank, 3 of 8 meet | escalation 1: no value today; under the rule Maj Dep false, Other Dep true (min 3, max 4) |
+| esc1: 2e blank, none meet, 2a and 2b Not at all | escalation 1: no value today; under the rule both false (min 0, max 1) |
+| esc1: 1d blank, three others a lot | escalation 1: Som Dis no value today; under the rule true (min 3, max 4) |
+| esc1: 1d blank, two others a lot | escalation 1: Som Dis no value today and under the rule, because 1d decides it (min 2, max 3) |
+| esc1 not covered: 6a-c YES, #8 blank | a conjunction, not a count: Bul Ner and Bin Eat Dis no value today and under the rule; Bin Eat Dis is escalation 2 |
+| depression: 5 of 9 meet, 2i at Several days | 2i counts at Several days (count #2i if present at all): Maj Dep true |
+| depression: 4 of 9 meet, 2i Not at all | the same without 2i: Other Dep true, Maj Dep false |
+| depression: 2c-f meet, 2a and 2b below | the #2a or b gate: four meeting without 2a or 2b gives both false |
+| somatic: three a lot | Som Dis criterion true at exactly three |
+| somatic: four a lot | Som Dis criterion above its threshold stays true |
+| depression: 6 of 9 meet | Maj Dep above its threshold stays true and Other Dep, capped at four, is false |
+| depression: exactly 2 meet, 2a and 2b | Other Dep at the bottom of its range of two to four is true |
+| panic: 3a-d YES, five of #4 YES | Pan Syn above its threshold of four stays true |
+| alcohol: 9 YES, two of #10 YES | Alc Abu above its threshold of one stays true |
+
+### Four cases pin today's answer, and the rule decided in escalation 1 changes it
+
+**The format cannot mark a case as expected to fail.** A case has a name and
+inputs, and nothing else. **Its expected value is never authored**: the
+generator computes it from the engine it runs on. So a case cannot say "this is
+wrong until the bounds rule lands". **It records today's engine, and today's
+engine is wrong in four of them:**
+
+| Case | Today, pinned in the vectors | Under escalation 1 |
+|---|---|---|
+| esc1: 2e blank, 5 of 8 meet | Maj Dep and Other Dep no value | Maj Dep `true`, Other Dep `false` |
+| esc1: 2e blank, 3 of 8 meet | both no value | Maj Dep `false`, Other Dep `true` |
+| esc1: 2e blank, none meet | both no value | both `false` |
+| esc1: 1d blank, three others a lot | Som Dis no value | `true` |
+
+The other escalation 1 cases (2e blank with 4 of 8, 1d blank with two others,
+#9 blank) give no value today **and** under the rule, so their vectors stay
+right.
+
+**What follows, for the capsule thread.** When the engine implements the rule,
+a package generated before then disagrees with it on these four cases, and the
+startup conformance run refuses the package (`disagree`). **That is the tripwire
+working: the change cannot pass silently.** But the cost is real: **every
+package generated before the rule must be regenerated and re-signed with the
+engine that implements it.** That is a release-sequencing decision for the
+capsule thread, not something content can soften.
+
+**Not authored, because it cannot be reached:** "#9 blank, #10 hidden". A rule
+whose condition is unanswered does not fire, so no input produces that state.
+**Recorded here so it is not mistaken for an omission.**
+
 ## Validation
 
 `check-source.mjs`: **VALID** at capsule `babc9b6`, run from a clean clone built
