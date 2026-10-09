@@ -25,96 +25,58 @@ translation this source can carry.
 the form held is *Spanish for the USA*, so the tag is `es-US`. The document
 decides the tag, never the other way round.
 
-## The total and the band are gated on completeness
+## An incomplete PHQ-9 has no total and no band
 
-**This is the decision that matters clinically.**
+**This is the decision that matters clinically, and since 2026-10-09 the engine
+holds it rather than an expression in this source.**
 
-`missingPolicy` is `propagate` on both scores, and **on this engine that policy
-is not consulted for an aggregate at all**. Measured: `sum` over nine items with
-three answered returns the sum of those three, under every one of the three
-policies. `docs/numeric-semantics.md` §2.1 records the underlying behaviour —
-"aggregation already omits missing members unconditionally, at every policy" —
-and notes that `missingPolicy` governs only the case where the whole expression
-already produced null, which for a `sum` means nothing at all was answered.
-
-**Left alone, that produces a clinically wrong output from a certified
-instrument:** a PHQ-9 with three of nine items answered yields a total of those
-three, and a band expression would classify it as mild depression. That is what
-a clinician reads.
-
-**So both scores are gated.** Each is wrapped in a completeness test —
-`countAnswered` over the nine scored items must equal 9 — and emits `null`
-otherwise. An incomplete PHQ-9 has **no total and no band**, rather than a
-partial total that looks complete. Measured: 3 of 9 and 8 of 9 answered both
-yield `total=null, band=null`; 9 of 9 yields both.
-
-**Where the evidence of incompleteness actually lives, corrected 2026-09-20.**
-An earlier draft of this file said `absentInputs` records which items were
-demanded and missing. **That is wrong for a gated score.** Measured:
+**What happens, measured 2026-10-09** on this source's own expressions, with the
+capsule's generator and engine at `dfa8e13`, content model 2.0:
 
 ```
-3 of 9 answered:
-  phq9TotalScore    value=null  absentInputs=[]
-  phq9SeverityBand  value=null  absentInputs=[]
+items 1 to 6 answered, 7 to 9 blank:
+  phq9TotalScore    value=null  undefinedReason=absentInput  absent: items 7, 8, 9
+  phq9SeverityBand  value=null  undefinedReason=absentInput  absent: items 7, 8, 9
+nothing answered:
+  both              value=null  undefinedReason=absentInput  absent: items 1 to 9
+all nine answered:
+  phq9TotalScore    the sum      phq9SeverityBand  its band
 ```
 
-The gate short-circuits on `countAnswered` before the `sum` is evaluated, so the
-sum never demands the nine items and nothing records them as absent. **What does
-carry it is the refusal**: `finalize` returns one `invalid_item_constraint` per
-unanswered item, naming each by path. The evidence is specific and it is on the
-refusal rather than on the score basis.
-
-**And that produces a contradiction in the record format, recorded here because
-it outlives this instrument.** Completeness is derived from `absentInputs` being
-empty — never stored as a flag, precisely so a stored value cannot diverge from
-its evidence. A gated score that withheld its value *because the instrument was
-incomplete* now carries an empty `absentInputs`, so **by that rule its basis
-reads as complete while its value is null.**
-
-**No record reaches that state today**, and the reason is specific to this
-instrument rather than general: all nine scored items are `required`, so
-`finalize` refuses before a record exists. **The contradiction is in the format,
-not in this content**, and it appears the moment an instrument with optional
-items uses the same gate — at which point a record would be sealed carrying a
-complete-looking basis for a score that was withheld.
-
-It is recorded with the engine escalation below, because they are the same gap.
+A score that touches an absent input has no total and lists what was absent,
+and a score read from it, the band, inherits both. **So a partial PHQ-9 can
+never show a partial total or a classification**, and the evidence of why is on
+the score basis, item by item. Both cases are vector cases (below), so an engine
+that put a partial total on an incomplete form would refuse to start with this
+content.
 
 **No proration.** A PHQ-9 over fewer than nine items is not a PHQ-9 scaled up.
+The source declares no published missing-data rule, which is the one thing that
+could let content model 2.0 emit a total over absent inputs.
 
-**The limitation is recorded rather than fixed**, because it is still true of
-the engine for any instrument that does not write this gate by hand.
+### History: the hand-written gate, 2026-09-20 to 2026-10-09
 
-### Escalated as engine work: the engine cannot refuse to score
+**On the engine of 2026-09-20 (content model 1.x)**, `sum` over nine items with
+three answered returned the sum of those three, under every value of
+`missingPolicy`, and a band would have classified it as mild depression. So both
+scores were wrapped in a completeness test, `countAnswered` over the nine items
+equal to 9, else a bare `null`. That worked, and it left two gaps, escalated as
+engine work at the time: the engine could not refuse to score on its own, and a
+gated score withheld its value with an empty `absentInputs`, so its basis read as
+complete while its value was null.
 
-**Two findings, and they are one gap.** The engine has **no first-class notion
-of an instrument refusing to score**. Authors express it with a hand-written
-gate, and everything below follows from that.
+**Both closed in the engine on 2026-10-05** (capsule `311b4d0`, content model
+2.0.0, "the missing-input repair"): an absent input withholds the total and
+records `absentInput` with the list, a score reading another inherits it, and
+`missingPolicy` was removed. Measured on 2026-10-09 (above): the absent items are
+now named on both scores.
 
-**1. Refusal-to-score should be available without the gate.** An author who does
-not write it gets a partial total silently, and the failure is invisible in the
-output — the instrument produces a number, and the number is wrong in a way no
-reader can see. `missingPolicy` has three values and none of them expresses
-*refuse*: measured, all three produce the same partial sum for an aggregate.
-
-**2. The gate is invisible to the completeness basis.** Because refusal is
-expressed as an ordinary conditional rather than as a refusal, the score basis
-cannot tell *withheld because incomplete* from *computed over everything it
-demanded*. Both carry an empty `absentInputs`. **A mechanism the format cannot
-see cannot be reasoned about by anything downstream**, including a verifier
-reading a sealed record years later.
-
-**What would close both:** a declared way for a score to require completeness of
-a named input set, so that the engine — rather than an expression — withholds
-the value, and the basis records why. Then completeness stays derivable from
-evidence, and an author cannot forget it.
-
-**An abstract statement of the underlying defect already existed** in
-`docs/numeric-semantics.md` §2.1, including the measurement that aggregation
-ignores the policy. It did not prevent this, because it was recorded as a
-naming defect rather than followed through to what it means for a banded
-instrument. **The PHQ-9 is the concrete case**: a severity classification over
-three of nine answered items, which is the output a clinician reads.
+**The gate was deleted on 2026-10-09, not rewritten.** It is no longer
+load-bearing, and its bare `null` is refused by content model 2.0
+(`null_literal_in_score`). The band's last arm, "if the total is at most 27 then 4,
+else `null`", became plain 4 at the same time: a total of nine items scored 0 to
+3 cannot exceed 27, so the `null` was unreachable and is refused for the same
+reason. No reachable result changed.
 
 ## The band is an ordinal, not a string
 
@@ -331,14 +293,40 @@ against the documents. That is a normal state and it is stated rather than left
 blank, because a transcription that verifies itself is a check grading its own
 work.
 
-## This source no longer satisfies the current schema
+## Migrated to authoring source 2.0, except its transcriber
 
-**Recorded 2026-10-07.** `source.json` declares `"sourceVersion": "1.1.0"` and
-carries `missingPolicy` on each score. Authoring source 2.0 renamed the first
-field to `authoringSchemaVersion`, accepts only 2.x, and removed the second.
-Measured with capsule `babc9b6`'s `check-source.mjs`: **INVALID**, missing
-`authoringSchemaVersion` at the document root (first violation only).
+**Migrated 2026-10-09**, on the trigger recorded on 2026-10-07: the source is
+needed, as the content the demonstration's assembly step names.
 
-**Left as it is, deliberately.** Nothing reads it today: the capsule's live walk
-uses its own in-repository sample. **Trigger to migrate: if this source is ever
-used for anything.**
+- `sourceVersion: "1.1.0"` became `authoringSchemaVersion: "2.0.0"`. The old
+  field named the source format's version, not the content's.
+- `versions` added, `1.0.0` for both `en-US` and `es-US`. Under 1.x the content
+  version was supplied at generation and none was ever recorded for this source;
+  `1.0.0` matches the sibling sources authored at 2.0.
+- `missingPolicy` deleted from both scores. Its value, `propagate`, is what
+  content model 2.0 always does.
+- The completeness gate deleted, and the band's unreachable `null` arm made plain
+  (see *An incomplete PHQ-9 has no total and no band*).
+- Vector cases authored (below).
+
+**`transcribedBy` is unset, deliberately, so the source fails schema validation
+by name until it is decided:** `required` at
+`/provenance/languages/en-US`, missing `transcribedBy`. Authoring source 2.0
+requires a role and an identifier that resolves in Truvex quality records, never
+a name. The old value, `{ "who": "Truvex engine track", "method":
+"textLayerAndImage" }`, named neither, and **no role or identifier is invented to
+make it pass**. When one is decided, the method to carry with it is
+`textLayerAndImage`, as recorded above.
+
+## Vector cases
+
+Authored, each named for what it proves. The generator adds the rest: every one
+of the total's 28 values is pinned (measured: 13 reached by authored cases, 15
+generated, `valueCoverage` full).
+
+| Case | Proves |
+|---|---|
+| complete: every item answered, item 10 too | total 27, band 4; item 10 answered and unscored |
+| incomplete: items 1 to 6 answered, 7 to 9 blank | no total and no band, items 7 to 9 named absent on both |
+| nothing answered | no total and no band, every item absent somewhere |
+| band boundary 4, 9, 14 and 19: below, at, above | each band edge: the total one below, at and one above the cut, with its band |

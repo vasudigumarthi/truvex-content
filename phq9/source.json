@@ -1,5 +1,6 @@
 {
-  "sourceVersion": "1.1.0",
+  "authoringSchemaVersion": "2.0.0",
+  "versions": { "en-US": "1.0.0", "es-US": "1.0.0" },
   "instrument": {
     "id": "urn:truvex:phq9:patient-health-questionnaire-9",
     "title": {
@@ -228,55 +229,27 @@
         "es-US": "Puntuación total del PHQ-9"
       },
       "expression": {
-        "op": "if",
-        "cond": {
-          "op": "eq",
-          "left": {
-            "op": "aggregate",
-            "fn": "countAnswered",
-            "of": "score",
-            "source": {
-              "kind": "items",
-              "itemIds": [
-                "phq9Item1",
-                "phq9Item2",
-                "phq9Item3",
-                "phq9Item4",
-                "phq9Item5",
-                "phq9Item6",
-                "phq9Item7",
-                "phq9Item8",
-                "phq9Item9"
-              ]
-            }
-          },
-          "right": { "op": "num", "value": 9 }
-        },
-        "then": {
-          "op": "aggregate",
-          "fn": "sum",
-          "of": "score",
-          "source": {
-            "kind": "items",
-            "itemIds": [
-              "phq9Item1",
-              "phq9Item2",
-              "phq9Item3",
-              "phq9Item4",
-              "phq9Item5",
-              "phq9Item6",
-              "phq9Item7",
-              "phq9Item8",
-              "phq9Item9"
-            ]
-          }
-        },
-        "else": { "op": "null" }
+        "op": "aggregate",
+        "fn": "sum",
+        "of": "score",
+        "source": {
+          "kind": "items",
+          "itemIds": [
+            "phq9Item1",
+            "phq9Item2",
+            "phq9Item3",
+            "phq9Item4",
+            "phq9Item5",
+            "phq9Item6",
+            "phq9Item7",
+            "phq9Item8",
+            "phq9Item9"
+          ]
+        }
       },
       "resultType": "number",
       "scope": { "kind": "assessment" },
-      "emit": true,
-      "missingPolicy": "propagate"
+      "emit": true
     },
     {
       "id": "phq9SeverityBand",
@@ -300,20 +273,14 @@
               "op": "if",
               "cond": { "op": "lte", "left": { "op": "scoreRef", "scoreId": "phq9TotalScore" }, "right": { "op": "num", "value": 19 } },
               "then": { "op": "num", "value": 3 },
-              "else": {
-                "op": "if",
-                "cond": { "op": "lte", "left": { "op": "scoreRef", "scoreId": "phq9TotalScore" }, "right": { "op": "num", "value": 27 } },
-                "then": { "op": "num", "value": 4 },
-                "else": { "op": "null" }
-              }
+              "else": { "op": "num", "value": 4 }
             }
           }
         }
       },
       "resultType": "number",
       "scope": { "kind": "assessment" },
-      "emit": true,
-      "missingPolicy": "propagate"
+      "emit": true
     }
   ],
   "rules": [],
@@ -326,7 +293,6 @@
         "retrievedFrom": "https://www.phqscreeners.com/",
         "retrievedAt": "2026-09-20",
         "digest": "sha256:e3fb5b8853e3530c9025c822b99fd4f4bc17da49eefda5ed689c49238c132a46",
-        "transcribedBy": { "who": "Truvex engine track", "method": "textLayerAndImage" },
         "verifiedBy": {
           "verified": false,
           "note": "Transcribed and not yet read back against the document by a second party. A transcription error in a clinical instrument is invisible in the output and wrong in every score afterwards."
@@ -340,7 +306,6 @@
         "retrievedFrom": "https://www.phqscreeners.com/",
         "retrievedAt": "2026-09-20",
         "digest": "sha256:4b55ea005bce454bc1de35b5b643960079b560c25fbc41c6b1d017cd09e15d1a",
-        "transcribedBy": { "who": "Truvex engine track", "method": "textLayerAndImage" },
         "verifiedBy": {
           "verified": false,
           "note": "Transcribed and not yet read back against the document by a second party, and this language most needs it: an earlier authoring source carried a different, fluent Spanish that matched no distributed form."
@@ -362,4 +327,205 @@
       }
     ]
   }
+,
+  "vectorCases": [
+    {
+      "name": "complete: every item answered, item 10 too; total 27, band 4",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item10", "value": { "kind": "choice", "code": "d2" } }
+      ]
+    },
+    {
+      "name": "incomplete: items 1 to 6 answered, 7 to 9 blank; no total and no band, items 7 to 9 named absent",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f2" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f2" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f2" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f2" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f2" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f2" } }
+      ]
+    },
+    {
+      "name": "nothing answered: every item absent; no total and no band",
+      "inputs": []
+    },
+    {
+      "name": "band boundary 4, below: total 3, band 0",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    },
+    {
+      "name": "band boundary 4, at: total 4, band 0",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f1" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    },
+    {
+      "name": "band boundary 4, above: total 5, band 1",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f2" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    },
+    {
+      "name": "band boundary 9, below: total 8, band 1",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f2" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    },
+    {
+      "name": "band boundary 9, at: total 9, band 1",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    },
+    {
+      "name": "band boundary 9, above: total 10, band 2",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f1" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    },
+    {
+      "name": "band boundary 14, below: total 13, band 2",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f1" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    },
+    {
+      "name": "band boundary 14, at: total 14, band 2",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f2" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    },
+    {
+      "name": "band boundary 14, above: total 15, band 3",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    },
+    {
+      "name": "band boundary 19, below: total 18, band 3",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    },
+    {
+      "name": "band boundary 19, at: total 19, band 3",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f1" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    },
+    {
+      "name": "band boundary 19, above: total 20, band 4",
+      "inputs": [
+        { "itemId": "phq9Item1", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item2", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item3", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item4", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item5", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item6", "value": { "kind": "choice", "code": "f3" } },
+        { "itemId": "phq9Item7", "value": { "kind": "choice", "code": "f2" } },
+        { "itemId": "phq9Item8", "value": { "kind": "choice", "code": "f0" } },
+        { "itemId": "phq9Item9", "value": { "kind": "choice", "code": "f0" } }
+      ]
+    }
+  ]
 }
