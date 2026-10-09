@@ -141,9 +141,16 @@ Four rules implement the printed skip instructions:
 | `skipFrom6aOr6b` | #6a or #6b NO | #6c, all of #7, #8 |
 | `skipFrom9` | #9 NO | all of #10 |
 
-**The printed instructions themselves are not carried.** "If you checked NO, go
-to question #5" tells a respondent how to navigate paper; on screen the rule
-does it. This follows the check-mark instruction decision in the PHQ-9 source.
+**The printed instructions are carried, as help text on the item that governs
+each skip** (decided by Vasu, 2026-10-08): #3a, #5a, #6b and #9, verbatim in
+each language, including the English #9's missing comma. On screen the rule
+still does the navigating and nothing about it changed. Carried because the
+form prints them: leaving them out is a deviation from the source instrument,
+and deviations here are recorded rather than made silently.
+
+*History:* until 2026-10-08 this said the instructions were not carried, because
+on screen the rule does their work, following the check-mark instruction
+decision in the PHQ-9 source. That was a deviation nobody had recorded as one.
 **The rules have no provenance slot in this schema**, so their source (the
 highlighted instructions on pages 2 and 3 of each form) is recorded only here.
 
@@ -163,6 +170,31 @@ highlighted instructions on pages 2 and 3 of each form) is recorded only here.
 - **The office-coding lines as text.** They are an administrative annotation,
   and their content is in the scores.
 - **Underlining, page numbers and the line break in the Italian title.**
+
+## Printed layout and numbers
+
+**Recorded 2026-10-08, against both printed forms.** Content model 2.2.0's
+`layout` and `number`, which before this date were absent, so the page stacked
+every item as the platform's fallback.
+
+- **Grids:** sections 1, 2, 3, 4, 5, 6, 7 and 10 are printed as one grid each, a
+  row per item against columns of options, and are `layout: "matrix"`. Sections
+  8, 9 and 11 are single questions and carry no layout.
+- **The Italian form was checked rather than assumed** to group as the English
+  does. It does: the same eleven sections, the same grids, the same numbering,
+  and the same four skip instructions at the same places.
+- **Numbers as printed:** each section's number on its group (`1` to `11`) and
+  each item's section and letter on the item (`1a`, `10e`), which is how the
+  form's own office-coding lines refer to them (*#2a-i*). The single-question
+  sections carry their number on the group and the item alike, because the
+  renderer shows one heading for them.
+- **The skip instructions printed inside sections 3, 5 and 6 sit between grid
+  rows on paper.** A grid holds only choice items, so they are help text on the
+  item above each one: see [Skip rules](#skip-rules).
+
+**Numbers here happen to be unique; numbers in general are not**, and nothing may
+use one as an identifier. That is a property of the content model, recorded on
+`number` in the capsule's canonical schema.
 
 ## Text layer versus image
 
