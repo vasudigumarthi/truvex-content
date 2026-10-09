@@ -26,7 +26,8 @@
         "en-US": "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
         "es-US": "Durante las últimas 2 semanas, ¿qué tan seguido ha tenido molestias debido a los siguientes problemas?"
       },
-      "repetition": { "mode": "none", "ordering": "unordered" }
+      "repetition": { "mode": "none", "ordering": "unordered" },
+      "layout": "matrix"
     },
     {
       "id": "functionalImpact",
