@@ -159,6 +159,21 @@ depression severity band (…)"* and their Spanish counterparts — which are
 Truvex wording in both languages, around band names that are transcribed in
 English only.
 
+## The nine symptom items are one grid, as printed
+
+**Declared 2026-10-09: `symptomItems` is `layout: "matrix"`**, confirmed by Vasu
+against the printed form, which sets the nine items as one grid with the four
+frequency headings once at the top. Until then the group declared no layout, and
+each item rendered as its own one-row grid repeating the headings, which departed
+from the form. **Item 10 is not part of that grid** and keeps its own layout.
+
+**What moved, measured:** the definitions, by `layout` on that group and by the
+canonical revision, which rose from 2.0.0 to 2.2.0 because the generator stamps
+the lowest revision that expresses a definition and `layout` arrived in 2.2.0.
+The vectors are byte-identical in both languages, every expected outcome
+included. **An engine that supports only 2.0.0 or 2.1.0 refuses this content**,
+correctly: it cannot show the instrument as printed.
+
 ## Group labels carry the form's own headings
 
 The forms have no group headings. Rather than invent section names — the earlier
