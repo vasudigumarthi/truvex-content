@@ -293,6 +293,7 @@
         "retrievedFrom": "https://www.phqscreeners.com/",
         "retrievedAt": "2026-09-20",
         "digest": "sha256:e3fb5b8853e3530c9025c822b99fd4f4bc17da49eefda5ed689c49238c132a46",
+        "transcribedBy": { "role": "transcriber", "id": "Truvex", "method": "textLayerAndImage" },
         "verifiedBy": {
           "verified": false,
           "note": "Transcribed and not yet read back against the document by a second party. A transcription error in a clinical instrument is invisible in the output and wrong in every score afterwards."
@@ -306,6 +307,7 @@
         "retrievedFrom": "https://www.phqscreeners.com/",
         "retrievedAt": "2026-09-20",
         "digest": "sha256:4b55ea005bce454bc1de35b5b643960079b560c25fbc41c6b1d017cd09e15d1a",
+        "transcribedBy": { "role": "transcriber", "id": "Truvex", "method": "textLayerAndImage" },
         "verifiedBy": {
           "verified": false,
           "note": "Transcribed and not yet read back against the document by a second party, and this language most needs it: an earlier authoring source carried a different, fluent Spanish that matched no distributed form."

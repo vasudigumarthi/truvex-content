@@ -309,14 +309,15 @@ needed, as the content the demonstration's assembly step names.
   (see *An incomplete PHQ-9 has no total and no band*).
 - Vector cases authored (below).
 
-**`transcribedBy` is unset, deliberately, so the source fails schema validation
-by name until it is decided:** `required` at
-`/provenance/languages/en-US`, missing `transcribedBy`. Authoring source 2.0
-requires a role and an identifier that resolves in Truvex quality records, never
-a name. The old value, `{ "who": "Truvex engine track", "method":
-"textLayerAndImage" }`, named neither, and **no role or identifier is invented to
-make it pass**. When one is decided, the method to carry with it is
-`textLayerAndImage`, as recorded above.
+**`transcribedBy` decided 2026-10-09 (Vasu): role `transcriber`, identifier
+`Truvex`, method `textLayerAndImage`**, on both languages. From the migration until
+then it was left unset, so the source failed validation by name rather than carry
+an invented value. The value before migration, `{ "who": "Truvex engine track",
+"method": "textLayerAndImage" }`, named neither a role nor an identifier.
+
+**`verifiedBy` is required by authoring source 2.0, and stays `{ "verified": false }`
+with its note**, the schema's own form for *nobody has checked it yet*, carried
+since 2026-09-20. Nothing about the verification changed.
 
 ## Vector cases
 
