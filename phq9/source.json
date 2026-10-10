@@ -255,9 +255,16 @@
     {
       "id": "phq9SeverityBand",
       "label": {
-        "en-US": "PHQ-9 depression severity band (0 None-minimal, 1 Mild, 2 Moderate, 3 Moderately Severe, 4 Severe)",
+        "en-US": "PHQ-9 depression severity band",
         "es-US": "Nivel de gravedad de la depresión según el PHQ-9 (0 ninguna a mínima, 1 leve, 2 moderada, 3 moderadamente grave, 4 grave)"
       },
+      "valueLabels": [
+        { "value": 0, "label": { "en-US": "None-minimal" } },
+        { "value": 1, "label": { "en-US": "Mild" } },
+        { "value": 2, "label": { "en-US": "Moderate" } },
+        { "value": 3, "label": { "en-US": "Moderately Severe" } },
+        { "value": 4, "label": { "en-US": "Severe" } }
+      ],
       "expression": {
         "op": "if",
         "cond": { "op": "lte", "left": { "op": "scoreRef", "scoreId": "phq9TotalScore" }, "right": { "op": "num", "value": 4 } },
@@ -313,7 +320,7 @@
           "verified": false,
           "note": "Transcribed and not yet read back against the document by a second party, and this language most needs it: an earlier authoring source carried a different, fluent Spanish that matched no distributed form."
         },
-        "notes": "The tag follows the document: the form held is Spanish for the USA, so the language is es-US. Items 6 and 8 carry an en-dash on this form where the English form carries an em-dash; both are transcribed as printed. The form's own office-coding line is printed in English and is not transcribed, being an administrative annotation rather than instrument content. The manual records that most translations are linguistically valid but that few have been psychometrically validated against an independent structured psychiatric interview; nothing here should be read as claiming validation."
+        "notes": "The tag follows the document: the form held is Spanish for the USA, so the language is es-US. Items 6 and 8 carry an en-dash on this form where the English form carries an em-dash; both are transcribed as printed. The form's own office-coding line is printed in English and is not transcribed, being an administrative annotation rather than instrument content. The manual records that most translations are linguistically valid but that few have been psychometrically validated against an independent structured psychiatric interview; nothing here should be read as claiming validation. The band names in the severity band score's label are Truvex translations, not transcription: this form prints none and the manual is English only, so they have no published source, and no clinician has reviewed them. The band score declares no value labels in this language."
       }
     },
     "scoring": [

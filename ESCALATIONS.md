@@ -252,3 +252,37 @@ document level, and their DECISIONS files state what could not be recorded.
 contributing members never returns a value, with a refinement for counts) and
 its evidence, `phq9Score=0` and Alc Abu, are now part of escalation 1's single
 rule. **The number is kept so that references to it still resolve.**
+
+---
+
+## 5. The Spanish PHQ-9 band names have no published source and no clinician review
+
+**Raised 2026-10-09. For Vasu: a decision only you can make, and it blocks the
+Spanish band names.**
+
+The Spanish PHQ-9 package signed for the demonstration carries the five severity
+band names in its band score's label (*ninguna a mínima, leve, moderada,
+moderadamente grave, grave*). **They are Truvex translations.** The Spanish form
+prints no band names and the instruction manual is English only, so they have no
+published source, and **no clinician has reviewed them.** Recorded since
+2026-10-03 in `phq9/DECISIONS.md`, *Spanish text with no published source*; since
+2026-10-09 also in the Spanish package's own provenance notes, so it travels
+with the content.
+
+**What changed today makes the gap visible rather than closing it.** Band scores
+now declare value labels (content model 2.3.0), and the English package names
+its bands from Table 4. **The Spanish package declares none**, deliberately: the
+generator takes a language's labels all or none, and nothing here may supply a
+translation in place of a published name. A Spanish session shows the band's
+number, and its label still carries the translated legend.
+
+**One of two things closes it:**
+
+- **The published Spanish names**, with the document they come from, which are
+  then transcribed into `valueLabels` and recorded in provenance; or
+- **A clinician review** of the current translations, recorded, after which they
+  may be declared as Truvex product text, said so in provenance.
+
+Until one of them, the Spanish band names are not to be presented as
+equivalent to the English ones.
+
