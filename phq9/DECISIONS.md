@@ -91,8 +91,17 @@ withheld on incompleteness. A band that cannot be withheld is the defect above.
 **And a string band would be worse even if it were possible.** A string-valued
 score writes display text into the record regardless of session language, so a
 Spanish session would store an English band name. **The ordinal is
-language-neutral**; the band names live in each language's score label, where
-they are translated like everything else a person reads.
+language-neutral**, and the record stores it in every language.
+
+**The names are declared beside the number, in `valueLabels`** (content model
+2.3.0, 2026-10-09): one label per band value, localized like every other label,
+so a reader holding the content derives the name and the record keeps the
+number. **English declares all five, from Table 4; Spanish declares none**, because
+no published Spanish name exists (see
+[Spanish text with no published source](#spanish-text-with-no-published-source)).
+The capsule's generator takes a language's labels all or none, and refuses a
+partial set. A Spanish session therefore shows the band's number until published
+names are supplied.
 
 Mapping, from Table 4: `0` None-minimal (0–4) · `1` Mild (5–9) · `2` Moderate
 (10–14) · `3` Moderately Severe (15–19) · `4` Severe (20–27).
@@ -100,8 +109,16 @@ Mapping, from Table 4: `0` None-minimal (0–4) · `1` Mild (5–9) · `2` Moder
 **The first band keeps the manual's own name.** Table 4 says "None-minimal", not
 "minimal", and shortening it would be an edit rather than a transcription.
 
-**The English label matches Table 4's casing exactly**, corrected 2026-10-03: it
-previously lowercased every band name. The Spanish label is unchanged; see
+**The English names match Table 4's casing exactly**, corrected 2026-10-03: they
+previously lowercased every band name.
+
+**The English score label no longer lists the bands**, changed 2026-10-09: it was
+"PHQ-9 depression severity band (0 None-minimal, 1 Mild, …)" and is now "PHQ-9
+depression severity band". That wording is Truvex's, not the form's, so this is a
+label edit, not a change of transcription; a page showing "Mild" beside a label
+listing all five bands would ask the reader to decode the number it no longer
+shows. **The Spanish label keeps its legend**, being the only place its
+translated names appear, and is unchanged; see
 [Spanish text with no published source](#spanish-text-with-no-published-source).
 
 **The top band is bounded at 27 rather than left open.** A total above 27 is
@@ -158,6 +175,14 @@ the two score labels' surrounding wording — *"PHQ-9 total score"*, *"PHQ-9
 depression severity band (…)"* and their Spanish counterparts — which are
 Truvex wording in both languages, around band names that are transcribed in
 English only.
+
+**Where a reviewer meets this, 2026-10-09.** Recorded only here, it reached
+nobody holding the package. **The Spanish package's provenance now says it**, in
+its language notes, so anyone holding the signed Spanish content learns that the
+band names in its label are Truvex translations with no published source and no
+clinician review. **The action item is [escalation 5](../ESCALATIONS.md)**:
+supply the published Spanish names, or commission a clinician review. Until then
+the Spanish band score declares no value labels and shows its number.
 
 ## The nine symptom items are one grid, as printed
 
